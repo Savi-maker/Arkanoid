@@ -1,0 +1,269 @@
+﻿  Buff.cpp
+  Poziom1.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,68): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,68): warning C4244:         with
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,68): warning C4244:         [
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,68): warning C4244:             T=float
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,68): warning C4244:         ]
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,51): warning C4244:         with
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,51): warning C4244:         [
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,51): warning C4244:             T=float
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(124,51): warning C4244:         ]
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(228,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(230,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom1.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(234,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom1.cpp”)
+  
+  ball.cpp
+  Block.cpp
+  MainMenu.cpp
+  OknoMenu.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(43,6): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,52): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         with
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         [
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,52): warning C4244:             T=unsigned int
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         ]
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,34): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         with
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         [
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,34): warning C4244:             T=unsigned int
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         ]
+  Paddle.cpp
+  Poziom2.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(166,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(168,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(215,23): warning C4101: "aevent": lokalna zmienna, do której nie istnieje odwołanie
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom2.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(173,28):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom2.cpp”)
+  
+  Poziom3.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(162,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(164,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom3.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(169,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom3.cpp”)
+  
+  Poziom4.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(163,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(165,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom4.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(170,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom4.cpp”)
+  
+  Poziom5.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(163,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(165,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom5.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(170,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom5.cpp”)
+  
+  Poziom6.cpp
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(75,19): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(181,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(183,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+  (kompilowanie pliku źródłowego „Poziom6.cpp”)
+      F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(188,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<Block,std::allocator<Block>>::emplace_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(858,24):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(776,20):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned int,unsigned int,unsigned int&,unsigned int&>(unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Ty=Block
+          ]
+          F:\VS\VC\Tools\MSVC\14.42.34433\include\vector(794,27):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned int,unsigned int,unsigned int&,unsigned int&>(_Alloc &,_Objty *const ,unsigned int &&,unsigned int &&,unsigned int &,unsigned int &)” funkcji szablon
+          with
+          [
+              _Alloc=std::allocator<Block>,
+              _Ty=Block,
+              _Objty=Block
+          ]
+  
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         with
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         [
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:             _Ty=unsigned int
+F:\VS\VC\Tools\MSVC\14.42.34433\include\xmemory(700,103): warning C4244:         ]
+  (kompilowanie pliku źródłowego „Poziom6.cpp”)
+  
+  Generowanie kodu...
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(90,1): warning C4715: "collisionTest6”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom6.cpp(319,1): warning C4715: "Poziom6::Start”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(78,1): warning C4715: "collisionTest5”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(89,1): warning C4715: "isGameOver5”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom5.cpp(288,1): warning C4715: "Poziom5::Start”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(88,1): warning C4715: "isGameOver4”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(77,1): warning C4715: "collisionTest4”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom4.cpp(288,1): warning C4715: "Poziom4::Start”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(88,1): warning C4715: "isGameOver3”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(77,1): warning C4715: "collisionTest3”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom3.cpp(288,1): warning C4715: "Poziom3::Start”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(88,1): warning C4715: "isGameOver2”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(77,1): warning C4715: "collisionTest2”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom2.cpp(299,1): warning C4715: "Poziom2::Start”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Savi\Desktop\token\Arkanoid_ver1\Arkanoid\Poziom1.cpp(368,1): warning C4715: "Poziom1::Start”: niewszystkie ścieżki kodu zwracają wartość
+  LINK : nie znaleziono elementu C:\Users\Savi\Desktop\token\Arkanoid_ver1\x64\Debug\Arkanoid.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
+  Arkanoid.vcxproj -> C:\Users\Savi\Desktop\token\Arkanoid_ver1\x64\Debug\Arkanoid.exe
