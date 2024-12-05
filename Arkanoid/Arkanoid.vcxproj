@@ -176,6 +176,7 @@
     <ClInclude Include="Poziom4.h" />
     <ClInclude Include="Poziom5.h" />
     <ClInclude Include="Poziom6.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

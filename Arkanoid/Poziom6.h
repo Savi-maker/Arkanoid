@@ -13,11 +13,7 @@ using namespace sf;
  * Funkcja inicjalizuje funkcje start
  * Destruktor
 */
-class Poziom6
-{
+class Poziom6 {
 public:
-	int Start();
-
-	~Poziom6();
-
+    int Start();
 };

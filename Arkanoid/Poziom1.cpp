@@ -1,7 +1,4 @@
-﻿/** \file Poziom1.h
-* Odpowiada za pierwszy poziom
-*/
-#include <iostream>
+﻿#include <iostream>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include "ball.h"
@@ -17,45 +14,20 @@
 using namespace std;
 using namespace sf;
 
-/// Szablon klasy
-/**
-* Funkcja z 2 argumentami szablonowymi, uniwersalna funckja, pozwoli nam sprawdzać kolizje miedzy roznymi obiektami
-* Zwraca dana krawedz obiektu w pixelach
-*/
-
-
-
-/// collisionTest1
-/**
-* Funckja z dwoma parametrami sprawdzajaca kolizje paletki i pileczki
-* Sprawdza czy oba obiekty na siebie nachodza
-* Zabawa grawitacja, losujemy w jaki sposob ma sie odbic pileczka od paletki
-*/
 bool collisionTestPaddleBall(Paddle& paddle, Ball& ball)
 {
     if (!isIntersecting1(paddle, ball))
         return false;
 
-    ball.update(paddle); // Wywołanie funkcji update z obiektem Paddle
+    ball.update(paddle);
     return true;
 }
 
-
-
-/// collisionTest1
-/**
-* Funckja z dwoma parametrami sprawdzajaca kolizje bloku i pileczki
-* Sprawdza czy oba obiekty na siebie nachodza
-* Przy odpowiednim warunku zniszcz blok
-* Zmienne float z dwoma metodami klasy
-* Instrukcja warunkowa, sprawdza w jaki sposob powinna odbic sie pilka
-*/
 bool collisionTestBlockBall(Block& block, Ball& ball, vector<Buff>& buffs)
 {
     if (!isIntersecting1(block, ball))
         return false;
 
-    // Sprawdzenie, z której strony nastąpiła kolizja
     float overlapLeft{ ball.right() - block.left() };
     float overlapRight{ block.right() - ball.left() };
     float overlapTop{ ball.bottom() - block.top() };
@@ -76,140 +48,92 @@ bool collisionTestBlockBall(Block& block, Ball& ball, vector<Buff>& buffs)
         ballFromTop ? ball.moveUp() : ball.moveDown();
     }
 
+    Vector2f blockPosition = block.getPosition();
     block.destroy();
 
-    // Generowanie buffów z 25% szansą
-    if (rand() % 4 == 0)
+	if (rand() % 4 == 0) // 25% szans na spawnienie buffa
     {
-        BuffType type = static_cast<BuffType>(rand() % static_cast<int>(BuffType::Count)); // Losowanie typu buffa
-        buffs.emplace_back(block.getPosition().x, block.getPosition().y, type);
+		BuffType type = static_cast<BuffType>(-1+rand() % static_cast<int>(BuffType::Count)); // Losowanie typu buffa
+        std::cout << static_cast<int>(type) << std::endl;
+		buffs.emplace_back(blockPosition.x, blockPosition.y, type); // Dodanie buffa do wektora
     }
 
     return true;
 }
 
-bool collisionTestBuffBall(Buff& buff, Ball& ball, Paddle& paddle, bool& reverseControls, float& paddleSpeedMultiplier, int& extraLives, float& scoreMultiplier, RenderWindow& window)
+bool collisionTestBuffPaddle(Buff& buff, Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, int& extraLives, float& scoreMultiplier, RenderWindow& window)
 {
-    if (!isIntersecting1(buff, ball))
+    if (!isIntersecting1(buff, paddle))
         return false;
 
-    // Zastosuj buff
-    switch (buff.getType())
+    BuffType randomType = buff.getType();
+
+    switch (randomType)
     {
     case BuffType::SpeedUp:
         ball.setVelocity(ball.getVelocity() * 1.5f);
+        std::cout << "SpeedUp" << std::endl;
         break;
     case BuffType::SpeedDown:
         ball.setVelocity(ball.getVelocity() * 0.5f);
+        std::cout << "SpeedDown" << std::endl;
         break;
     case BuffType::SizeUp:
-        paddle.setSize(Vector2f(paddle.getWidth() * 1.5f, paddle.getHeight()));
+        paddle.setSize(Vector2f(paddle.getWidth() * 1.5f, paddle.getHeight() * 1.5f));
+        std::cout << "SizeUp" << std::endl;
         break;
     case BuffType::SizeDown:
-        paddle.setSize(Vector2f(paddle.getWidth() * 0.5f, paddle.getHeight()));
+        paddle.setSize(Vector2f(paddle.getWidth() * 0.5f, paddle.getHeight() * 1.5f));
+        std::cout << "SizeDown" << std::endl;
         break;
     case BuffType::ReverseControls:
         reverseControls = !reverseControls;
         paddle.setReverseControls(reverseControls);
+        std::cout << "ReverseControls" << std::endl;
         break;
     case BuffType::BallSpeedUp:
-        ball.setVelocity(ball.getVelocity() * 1.2f);
+        ball.setVelocity(ball.getVelocity() * 2.0f);
+        std::cout << "BallSpeedUp" << std::endl;
         break;
     case BuffType::PaddleSpeedUp:
-        paddleSpeedMultiplier *= 1.2f;
+        paddleSpeedMultiplier *= 2.0f;
+        std::cout << "PaddleSpeedUp" << std::endl;
         break;
-    case BuffType::ScreenShake:
-        // Implementacja trzęsienia ekranu
+    /*case BuffType::ScreenShake:
         window.setView(View(FloatRect(0, 0, 1100, 850)));
         window.setView(View(FloatRect(rand() % 10 - 5, rand() % 10 - 5, 1100, 850)));
-        break;
-    case BuffType::InvisibleBall:
+        std::cout << "ScreenShake" << std::endl;
+        break;*/
+    /*case BuffType::InvisibleBall:
         ball.setInvisible(true);
-        break;
-    case BuffType::DoubleBall:
-        // Implementacja podwójnej piłki
-        break;
+        ball.invisibilityClock.restart();
+        std::cout << "InvisibleBall" << std::endl;
+        break;*/
     case BuffType::BallSizeUp:
-        ball.setRadius(ball.getRadius() * 1.5f);
+        ball.setRadius(ball.getRadius() * 2.0f);
+        std::cout << "BallSizeUp" << std::endl;
         break;
     case BuffType::BallSizeDown:
         ball.setRadius(ball.getRadius() * 0.5f);
+        std::cout << "BallSizeDown" << std::endl;
         break;
     case BuffType::PaddleSpeedDown:
         paddleSpeedMultiplier *= 0.5f;
-        break;
-    case BuffType::ExtraLife:
-        extraLives++;
-        break;
-    case BuffType::ScoreMultiplier:
-        scoreMultiplier *= 2.0f;
+        std::cout << "PaddleSpeedDown" << std::endl;
         break;
     }
-
-    buff.update(); // Aktualizacja stanu buffa po zastosowaniu
+    buff.activate();
     return true;
 }
 
-
-
-
-/// isGameOver1
-/**
-* Instrukcja warunkowa, sprawdza czy pilka spadla na dol planszy
-*/
 bool isGameOver1(Ball& ball)
 {
-    if (ball.bottom() >= 850)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return ball.bottom() >= 850;
 }
 
-/// Start
-/**
-* Obiekt klasy o dwoch parametrach
-* Obiekt klasy o dwoch parametrach
-* Stworzenie okna window
-* Ustalenie limitu klatek na sekunde
-* Stworzenie eventu
-* Stworzenie zawartosci bloczkow, okreslaja ich liczbe i wielkosc
-* Stworzenie wektora obiektu klasy
-* Implementacja liczby blokow
-* Petla for rysujaca blocki na ekranie
-* Stworzenie tekstur i dodanie kilku tekstur tla
-* Stworzenie obiektu klasy do rysowania obrazu na ekranie
-* Ustawienie rozmiaru tla
-* Buforowanie dzwieku oraz jego implementacja
-* Wlaczenie muzyki
-* Petla while, ktora dziala tylko przy wlaczonym oknie menu
-* Wyczyszczenie okna, narysowanie obrazu na ekranie, dodanie opcji odpowiadajacej za funkcjonalnosc okna
-* Warunek sprawdzajacy czy okno zostalo zamkniete
-* Wywolanie funkcji update oraz collisionTest dla pilki i paletki\
-* Warunek, ktory sprawdza czy gra zostala przegrana
-* Zatrzymanie muzyki, wylaczenie okna
-* Stworzenie nowego okna
-* Buforowanie nowych dzwiekow i ich implementacja
-* Dodanie opoznienia dzwieku i wlaczenie go
-* Petla while sprawdza czy nowe okno jest otwarte
-* Stworzenie eventu
-* Petla while sprawdza czy nowy event jest wlaczony - jesli nie to wylacza okno, jesli jest to czekaj na przycisk i wylacz okno
-* Wyczysc ekran, narysuj tlo i wyswietl
-* Zwroc wartosc -1
-* Petla for, dla ktorej argumentow automatycznie jest przypisany typ
-* Warunek, ktory sprawdza kolizje bloku i pileczki, jesli nastapi zmniejsza liczbe blokow
-* Automatyczny iterator, usuwa blok w przypadku spelnienia warunku
-* Warunek sprawdza czy liczba blokow jest rowna zero
-* Otworz nowe okno z tlem i komunikatem
-* Zwroc wartosc 2
-* Narysuj na ekranie pilke, paletke i bloki
-*/
 int Poziom1::Start()
 {
-    Ball ball(300, 400);
+    Ball ball(550, 425);
     Paddle paddle(400, 790);
     RenderWindow window(VideoMode(1100, 850), "Arcanoid - Poziom 1");
 
@@ -225,18 +149,13 @@ int Poziom1::Start()
     int extraLives = 3;
     float scoreMultiplier = 1.0f;
 
-    for (int i = 0; i < blocksY; i++)
+    for (unsigned i = 0; i < blocksY; i++)
     {
-        for (int j = 0; j < blocksX; j++)
-        {
-            if ((i + j) % 2 == 0)
-            {
-                blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
-            }
+        for (unsigned j = 0; j < blocksX; j++)
+        {              
+            blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);           
         }
     }
-
-    numberOfBlocks /= 2;
 
     Texture Poziom1;
     Poziom1.loadFromFile("Textury/level1.png");
@@ -256,8 +175,6 @@ int Poziom1::Start()
     mainWygrana.loadFromFile("Textury/wygrana.png");
     tloWygrana.setTexture(&mainWygrana);
 
-    Sprite sprite11;
-    Sprite sprite111;
     SoundBuffer buffer;
     buffer.loadFromFile("Audio/level1Audio.wav");
     Sound sound;
@@ -277,9 +194,9 @@ int Poziom1::Start()
         }
 
         paddle.update();
-        ball.update(paddle); // Wywołanie metody update z obiektem Paddle
+        ball.update(paddle);
 
-        if (isGameOver1(ball) == true)
+        if (isGameOver1(ball))
         {
             sound.stop();
             window.close();
@@ -299,7 +216,7 @@ int Poziom1::Start()
                     {
                         Super.close();
                     }
-                    if (aevent.type == Event::KeyPressed)
+                    if (aevent.type == Event:: KeyPressed)
                     {
                         if (aevent.key.code == Keyboard::Escape)
                         {
@@ -338,20 +255,38 @@ int Poziom1::Start()
             return 2;
         }
 
-        // Aktualizacja i rysowanie buffów
-        for (auto& buff : buffs)
+        for (auto it = buffs.begin(); it != buffs.end();)
         {
-            buff.update();
-            window.draw(buff);
+            it->fall();
+            window.draw(*it);
 
-            if (collisionTestBuffBall(buff, ball, paddle, reverseControls, paddleSpeedMultiplier, extraLives, scoreMultiplier, window))
+            if (collisionTestBuffPaddle(*it, paddle, ball, reverseControls, paddleSpeedMultiplier, extraLives, scoreMultiplier, window))
             {
-                // Buff został zastosowany, więc można go usunąć
-                buff.update();
+                it = buffs.erase(it); // Usuń buff po aktywacji
+            }
+            else
+            {
+                ++it;
             }
         }
 
-        buffs.erase(remove_if(buffs.begin(), buffs.end(), [](Buff& buff) { return !buff.isActive(); }), buffs.end());
+        buffs.erase(remove_if(buffs.begin(), buffs.end(), [](Buff& buff) {
+            buff.updateEffect();
+            return buff.top() > 850;
+            }), buffs.end());
+
+        for (auto it = buffs.begin(); it != buffs.end();)
+        {
+            if (it->isEffectActive() && it->getEffectClock().getElapsedTime().asSeconds() >= it->getEffectDuration())
+            {
+                it->resetEffect(paddle, ball, reverseControls, paddleSpeedMultiplier, scoreMultiplier);
+                it = buffs.erase(it);
+            }
+            else
+            {
+                ++it;
+            }
+        }
 
         paddle.setVelocity(paddle.getVelocity() * paddleSpeedMultiplier);
 
@@ -365,8 +300,5 @@ int Poziom1::Start()
 
         window.display();
     }
+    return 0;
 }
-
-
-
-

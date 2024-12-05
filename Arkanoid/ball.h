@@ -1,22 +1,9 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/System/Clock.hpp> // Dodaj ten include
 #include "Paddle.h"
 using namespace sf;
 
-/// Ball
-/**
- * Implementacja klasy z odwolaniem do klasy skladowej jezyka sfml ktora zawiera
- * Funkcja tworzaca konstruktor z dwoma parameatrami
- * Funkcja usuwajaca dowolny konstruktor
- * Funkcja dodjaca dowolny destruktor
- * Funkcja aktualizujaca polozenie pileczki
- * Funkcja wektorowa
- * Utworzenie okregu funkcji sfml
- * Implementacja promienia pileczki
- * Implementacja predkosci pileczki
- * Funkcja wektorowa ustalajaca szybkosc pileczki na planszy
- *
-*/
 class Ball : public Drawable
 {
 public:
@@ -40,11 +27,14 @@ public:
     float bottom() const;
     Vector2f getVelocity() const;
     void setVelocity(const Vector2f& newVelocity);
-    float getRadius() const; // Getter for radius
-    void setRadius(float radius); // Setter for radius
-    void setInvisible(bool invisible); // Setter for invisibility
+    float getRadius() const;
+    void setRadius(float radius);
+    void setInvisible(bool invisible);
     void draw(RenderTarget& target, RenderStates state) const override;
     void checkCollisionWithPaddle(const Paddle& paddle);
+    sf::Clock invisibilityClock; // Dodaj zegar do śledzenia czasu niewidzialności
+    float invisibilityDuration{ 1.0f }; // Czas trwania niewidzialności w sekundach
+    void updateInvisibility(); // Deklaracja metody do aktualizacji stanu niewidzialności
 
 private:
     CircleShape shape;

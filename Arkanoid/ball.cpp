@@ -13,6 +13,8 @@ Ball::Ball(float t_X, float t_Y)
 
 void Ball::update()
 {
+    updateInvisibility(); // Aktualizacja stanu niewidzialnoœci
+
     shape.move(this->velocity);
 
     // Kolizja z lew¹ i praw¹ œcian¹
@@ -34,6 +36,8 @@ void Ball::update()
 
 void Ball::update(const Paddle& paddle)
 {
+    updateInvisibility(); // Aktualizacja stanu niewidzialnoœci
+
     shape.move(this->velocity);
 
     if (isIntersecting1(*this, paddle))
@@ -151,8 +155,20 @@ void Ball::setRadius(float radius)
 void Ball::setInvisible(bool invisible)
 {
     this->invisible = invisible;
-    shape.setFillColor(invisible ? Color::Transparent : Color::White);
+    shape.setFillColor(invisible ? Color::Transparent : Color::Red);
+    if (invisible) {
+        invisibilityClock.restart(); // Restartuj zegar, gdy pi³ka staje siê niewidzialna
+    }
 }
+
+void Ball::updateInvisibility()
+{
+    if (invisible && invisibilityClock.getElapsedTime().asSeconds() >= invisibilityDuration)
+    {
+        invisible = false;
+    }
+}
+
 
 void Ball::draw(RenderTarget& target, RenderStates state) const
 {
@@ -202,3 +218,4 @@ void Ball::checkCollisionWithPaddle(const Paddle& paddle)
     velocity.x = ballVelocity * std::sin(radians);
     velocity.y = -ballVelocity * std::cos(radians);
 }
+
