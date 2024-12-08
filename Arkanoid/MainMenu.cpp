@@ -36,9 +36,15 @@ MainMenu::MainMenu(float width, float height)
 
 	mainMenu[3].setFont(font);
 	mainMenu[3].setFillColor(Color::White);
-	mainMenu[3].setString("Wyjscie");
+	mainMenu[3].setString("Tablica wyników");
 	mainMenu[3].setCharacterSize(45);
-	mainMenu[3].setPosition(475, 430);
+	mainMenu[3].setPosition(370, 430);
+
+	mainMenu[4].setFont(font);
+	mainMenu[4].setFillColor(Color::White);
+	mainMenu[4].setString("Wyjscie");
+	mainMenu[4].setCharacterSize(45);
+	mainMenu[4].setPosition(475, 490);
 
 	MainMenuSelected = -1;
 }

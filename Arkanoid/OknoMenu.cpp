@@ -13,7 +13,7 @@
 #include "Poziom6.h"
 #include <windows.h>
 #include <SFML/Audio.hpp>
-
+#include <sstream>
 using namespace std;
 using namespace sf;
 
@@ -69,6 +69,12 @@ void main()
 	Texture opcjeTlo;
 	opcjeTlo.loadFromFile("Textury/background3.jpg");
 	tloOpcje.setTexture(&opcjeTlo);
+	//tlo wynikow
+	RectangleShape tloWynik;
+	tloWynik.setSize(Vector2f(1100, 850));
+	Texture wynikTlo;
+	wynikTlo.loadFromFile("Textury/background2.jpg");
+	tloWynik.setTexture(&wynikTlo);
 	//tlo o grze
 	RectangleShape tloOGrze;
 	tloOGrze.setSize(Vector2f(1100, 850));
@@ -78,133 +84,206 @@ void main()
 
 
 
-	while (MENU.isOpen()) ///funkcja dzije sie tylko kiedy jestesmy w mennu
-	{
-		Event menuEvent;
-		while (MENU.pollEvent(menuEvent))
-		{
-			if (menuEvent.type == Event::Closed)
-			{
-				MENU.close();
-			}
-			if (menuEvent.type == Event::KeyPressed) /// jesli przycisk zostal nacisniety 
-			{
-				if (menuEvent.key.code == Keyboard::Up) ///sprawdza czy przyciskt w gore lub w dol zostalk nacisniety lub esc
-				{
-					mainMenu.MoveUp();
-					break;
-				}
-				if (menuEvent.key.code == Keyboard::Down)
-				{
-					mainMenu.MoveDown();
-					break;
-				}
-				if (menuEvent.key.code == Keyboard::Return)
-				{
-					int x = mainMenu.MainMenuPressed();		///znajdz to jaksa zmienna w klasie  main menu .h			
-					if (x == 0)
-					{
-						sound.stop();
+    while (MENU.isOpen()) ///funkcja dzije sie tylko kiedy jestesmy w mennu
+    {
+        Event menuEvent;
+        while (MENU.pollEvent(menuEvent))
+        {
+            if (menuEvent.type == Event::Closed)
+            {
+                MENU.close();
+            }
+            if (menuEvent.type == Event::KeyPressed) /// jesli przycisk zostal nacisniety 
+            {
+                if (menuEvent.key.code == Keyboard::Up) ///sprawdza czy przyciskt w gore lub w dol zostalk nacisniety lub esc
+                {
+                    mainMenu.MoveUp();
+                    break;
+                }
+                if (menuEvent.key.code == Keyboard::Down)
+                {
+                    mainMenu.MoveDown();
+                    break;
+                }
+                if (menuEvent.key.code == Keyboard::Return)
+                {
+                    int x = mainMenu.MainMenuPressed();		///znajdz to jaksa zmienna w klasie  main menu .h			
+                    if (x == 0)
+                    {
+                        sound.stop();
 
-						if (poziom1->Start() == -1)
-						{
-							continue;
-						}
+                        if (poziom1->Start() == -1)
+                        {
+                            continue;
+                        }
 
-						if (poziom2->Start() == 2)
-						{
-							continue;
-						}
+                        if (poziom2->Start() == 2)
+                        {
+                            continue;
+                        }
 
-						if (poziom3->Start() == 3)
-						{
-							continue;
-						}
+                        if (poziom3->Start() == 3)
+                        {
+                            continue;
+                        }
 
-						if (poziom4->Start() == 4)
-						{
-							continue;
-						}
+                        if (poziom4->Start() == 4)
+                        {
+                            continue;
+                        }
 
-						if (poziom5->Start() == 5)
-						{
-							continue;
-						}
+                        if (poziom5->Start() == 5)
+                        {
+                            continue;
+                        }
 
-						if (poziom6->Start() == 6)
-						{
-							continue;
-						}
+                        if (poziom6->Start() == 6)
+                        {
+                            continue;
+                        }
 
-						else
-						{
-							break;
-						}
+                        else
+                        {
+                            break;
+                        }
 
-					}
-					sound.play();
-					if (x == 1)
-					{
-						RenderWindow Options(VideoMode(1100, 850), "Opcje");
-						while (Options.isOpen())
-						{
-							Event aevent;
-							while (Options.pollEvent(aevent))
-							{
-								if (aevent.type == Event::Closed)
-								{
-									Options.close();
-								}
-								if (aevent.type == Event::KeyPressed)
-								{
-									if (aevent.key.code == Keyboard::Escape)
-									{
-										Options.close();
-									}
-								}
-							}
-							Options.clear();
-							Options.draw(tloOpcje);
-							Options.display();
-						}
-					}
-					if (x == 2)
-					{
-						RenderWindow About(VideoMode(1100, 850), "O grze");
-						while (About.isOpen())
-						{
-							Event aevent;
-							while (About.pollEvent(aevent))
-							{
-								if (aevent.type == Event::Closed)
-								{
-									About.close();
-								}
-								if (aevent.type == Event::KeyPressed)
-								{
-									if (aevent.key.code == Keyboard::Escape)
-									{
-										About.close();
-									}
-								}
-							}
-							About.clear();
-							About.draw(tloOGrze);
-							About.display();
+                    }
+                    sound.play();
+                    if (x == 1)
+                    {
+                        RenderWindow Options(VideoMode(1100, 850), "Opcje");
+                        while (Options.isOpen())
+                        {
+                            Event aevent;
+                            while (Options.pollEvent(aevent))
+                            {
+                                if (aevent.type == Event::Closed)
+                                {
+                                    Options.close();
+                                }
+                                if (aevent.type == Event::KeyPressed)
+                                {
+                                    if (aevent.key.code == Keyboard::Escape)
+                                    {
+                                        Options.close();
+                                    }
+                                }
+                            }
+                            Options.clear();
+                            Options.draw(tloOpcje);
+                            Options.display();
+                        }
+                    }
+                    if (x == 2)
+                    {
+                        RenderWindow About(VideoMode(1100, 850), "O grze");
+                        while (About.isOpen())
+                        {
+                            Event aevent;
+                            while (About.pollEvent(aevent))
+                            {
+                                if (aevent.type == Event::Closed)
+                                {
+                                    About.close();
+                                }
+                                if (aevent.type == Event::KeyPressed)
+                                {
+                                    if (aevent.key.code == Keyboard::Escape)
+                                    {
+                                        About.close();
+                                    }
+                                }
+                            }
+                            About.clear();
+                            About.draw(tloOGrze);
+                            About.display();
 
-						}
-					}
-					if (x == 3)
-					{
-						MENU.close();
-						break;
-					}
-				}
-			}
-			MENU.clear();
-			MENU.draw(tloMenu);
-			mainMenu.draw(MENU);
-			MENU.display();
-		}
-	}
+                        }
+                    }
+                    if (x == 3)
+                    {
+                        RenderWindow About(VideoMode(1100, 850), "Wyniki");
+
+                        // SprawdŸ, czy plik istnieje, jeœli nie, utwórz go
+                        ifstream file("wyniki.txt");
+                        if (!file)
+                        {
+                            ofstream newFile("wyniki.txt");
+                            newFile << "Brak wyników do wyœwietlenia." << endl;
+                            newFile.close();
+                            file.open("wyniki.txt");
+                        }
+
+                        // Wczytaj wyniki z pliku
+                        stringstream buffer;
+                        buffer << file.rdbuf();
+                        string wyniki = buffer.str();
+
+                        // Podziel wyniki na kolumny
+                        vector<string> lines;
+                        string line;
+                        while (getline(buffer, line))
+                        {
+                            lines.push_back(line);
+                        }
+
+                        // Ustaw tekst do wyœwietlenia w kolumnach
+                        Font font;
+                        font.loadFromFile("Czcionki/czcionka.ttf");
+                        vector<Text> texts;
+                        int maxLinesPerColumn = 10;
+                        int column = 0;
+                        for (size_t i = 0; i < lines.size(); ++i)
+                        {
+                            if (i % maxLinesPerColumn == 0 && i != 0)
+                            {
+                                column++;
+                                if (column >= 3) break; // Maksymalnie 3 kolumny
+                            }
+                            Text text(lines[i], font, 24);
+                            text.setFillColor(Color::White);
+                            text.setPosition(50 + column * 350, 50 + (i % maxLinesPerColumn) * 30);
+                            texts.push_back(text);
+                        }
+
+                        while (About.isOpen())
+                        {
+                            Event aevent;
+                            while (About.pollEvent(aevent))
+                            {
+                                if (aevent.type == Event::Closed)
+                                {
+                                    About.close();
+                                }
+                                if (aevent.type == Event::KeyPressed)
+                                {
+                                    if (aevent.key.code == Keyboard::Escape)
+                                    {
+                                        About.close();
+                                    }
+                                }
+                            }
+                            About.clear();
+                            About.draw(tloWynik);
+                            for (const auto& text : texts)
+                            {
+                                About.draw(text); // Rysowanie tekstu z wynikami
+                            }
+                            About.display();
+
+                        }
+                    }
+                    if (x == 4)
+                    {
+                        MENU.close();
+                        break;
+                    }
+                }
+            }
+            MENU.clear();
+            MENU.draw(tloMenu);
+            mainMenu.draw(MENU);
+            MENU.display();
+        }
+    }
 }

@@ -11,7 +11,7 @@ using namespace sf;
 /**
 * @def < defonicja maksymalnego rozmiaru menu jako 4>;
 */
-#define Max_main_menu 4  ///deninujemy max rozmiar menu jako 4 ;
+#define Max_main_menu 5  ///deninujemy max rozmiar menu jako 4 ;
 
 ///MainMenu
 /**
