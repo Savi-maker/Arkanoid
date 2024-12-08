@@ -1,16 +1,17 @@
+// Buff.cpp
 #include "Buff.h"
 #include <iostream>
-#include "ball.h"
+#include <thread>
 
 Buff::Buff(float t_X, float t_Y, BuffType type)
     : type(type)
 {
     shape.setPosition(t_X, t_Y);
-    shape.setSize(Vector2f(20.0f, 20.0f));
-    shape.setFillColor(Color::Green);
+    shape.setSize(sf::Vector2f(20.0f, 20.0f));
+    shape.setFillColor(sf::Color::Green);
 
-    progressBar.setSize(Vector2f(20.0f, 3.0f));
-    progressBar.setFillColor(Color::Red);
+    progressBar.setSize(sf::Vector2f(20.0f, 3.0f));
+    progressBar.setFillColor(sf::Color::Red);
     progressBar.setPosition(t_X, t_Y - 5.0f);
 
     std::cout << "Buff created at position: (" << t_X << ", " << t_Y << ")" << std::endl;
@@ -87,28 +88,77 @@ bool Buff::isEffectEnded() const
     return effectEnded;
 }
 
-void Buff::activate()
+void Buff::activate(Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier)
 {
     if (!effectActive)
     {
         effectActive = true;
         effectEnded = false;
         effectClock.restart();
-        std::cout << "Buff effect activated" << std::endl;
+        std::cout << "Buff effect activated: ";
 
+        switch (type)
+        {
+        case BuffType::SpeedUp:
+            std::cout << "SpeedUp" << std::endl;
+            ball.setVelocity(ball.getVelocity() * 1.5f);
+            break;
+        case BuffType::SpeedDown:
+            std::cout << "SpeedDown" << std::endl;
+            ball.setVelocity(ball.getVelocity() * 0.5f);
+            break;
+        case BuffType::SizeUp:
+            std::cout << "SizeUp" << std::endl;
+            paddle.setSize(sf::Vector2f(paddle.getWidth() * 1.5f, paddle.getHeight()));
+            break;
+        case BuffType::SizeDown:
+            std::cout << "SizeDown" << std::endl;
+            paddle.setSize(sf::Vector2f(paddle.getWidth() * 0.5f, paddle.getHeight()));
+            break;
+        case BuffType::ReverseControls:
+            std::cout << "ReverseControls" << std::endl;
+            reverseControls = true;
+            paddle.setReverseControls(reverseControls);
+            break;
+        case BuffType::BallSpeedUp:
+            std::cout << "BallSpeedUp" << std::endl;
+            ball.setVelocity(ball.getVelocity() * 1.5f);
+            break;
+        case BuffType::BallSpeedDown:
+            std::cout << "BallSpeedDown" << std::endl;
+            ball.setVelocity(ball.getVelocity() * 0.5f);
+            break;
+        case BuffType::PaddleSpeedUp:
+            std::cout << "PaddleSpeedUp" << std::endl;
+            paddleSpeedMultiplier = 1.5f;
+            break;
+        case BuffType::PaddleSpeedDown:
+            std::cout << "PaddleSpeedDown" << std::endl;
+            paddleSpeedMultiplier = 0.5f;
+            break;
+        case BuffType::ScoreMultiplier:
+            std::cout << "ScoreMultiplier" << std::endl;
+            scoreMultiplier = 2.0f;
+            break;
+        default:
+            break;
+        }
+
+        std::thread(&Buff::waitForThreeSeconds, this, std::ref(paddle), std::ref(ball), std::ref(reverseControls), std::ref(paddleSpeedMultiplier), std::ref(scoreMultiplier)).detach();
     }
 }
-void Buff::waitForThreeSeconds()
+
+void Buff::waitForThreeSeconds(Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier)
 {
-    this->updateEffect();
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    resetEffect(paddle, ball, reverseControls, paddleSpeedMultiplier, scoreMultiplier);
 }
+
 void Buff::deactivate()
 {
-	
-		effectActive = false;
-		effectEnded = true;
-		std::cout << "Buff effect deactivated" << std::endl;
-	
+    effectActive = false;
+    effectEnded = true;
+    std::cout << "Buff effect deactivated" << std::endl;
 }
 
 void Buff::updateEffect()
@@ -125,11 +175,11 @@ void Buff::resetEffect(Paddle& paddle, Ball& ball, bool& reverseControls, float&
     {
     case BuffType::SpeedUp:
     case BuffType::SpeedDown:
-        ball.setVelocity(Vector2f(5.0f, 5.0f));
+        ball.setVelocity(sf::Vector2f(5.0f, 5.0f));
         break;
     case BuffType::SizeUp:
     case BuffType::SizeDown:
-        paddle.setSize(Vector2f(100.0f, 20.0f));
+        paddle.setSize(sf::Vector2f(100.0f, 20.0f));
         break;
     case BuffType::ReverseControls:
         reverseControls = false;
@@ -137,7 +187,7 @@ void Buff::resetEffect(Paddle& paddle, Ball& ball, bool& reverseControls, float&
         break;
     case BuffType::BallSpeedUp:
     case BuffType::BallSpeedDown:
-        ball.setVelocity(Vector2f(5.0f, 5.0f));
+        ball.setVelocity(sf::Vector2f(5.0f, 5.0f));
         break;
     case BuffType::PaddleSpeedUp:
     case BuffType::PaddleSpeedDown:
@@ -152,11 +202,11 @@ void Buff::resetEffect(Paddle& paddle, Ball& ball, bool& reverseControls, float&
 
     effectActive = false;
     effectEnded = true;
-    progressBar.setSize(Vector2f(20.0f, 3.0f));
+  //  progressBar.setSize(sf::Vector2f(20.0f, 3.0f));
     std::cout << "Buff effect reset" << std::endl;
 }
 
-void Buff::draw(RenderTarget& target, RenderStates state) const
+void Buff::draw(sf::RenderTarget& target, sf::RenderStates state) const
 {
     target.draw(this->shape, state);
     if (effectActive)

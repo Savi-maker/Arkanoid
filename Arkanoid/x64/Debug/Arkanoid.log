@@ -1,19 +1,2 @@
 ﻿  Buff.cpp
-  Poziom1.cpp
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,68): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,68): warning C4244:         with
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,68): warning C4244:         [
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,68): warning C4244:             T=float
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,68): warning C4244:         ]
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,51): warning C4244:         with
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,51): warning C4244:         [
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,51): warning C4244:             T=float
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(104,51): warning C4244:         ]
-C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(127,10): error C2660: "Buff::resetEffect": funkcja nie przyjmuje 0 argumentów
-      C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Buff.h(48,10):
-      zobacz deklarację „Buff::resetEffect”
-      C:\Users\Savi\Desktop\kopia\Arkanoid\Arkanoid\Poziom1.cpp(127,10):
-      podczas próby dopasowania listy argumentów "()"
-  
-  Generowanie kodu...
+  Arkanoid.vcxproj -> C:\Users\schod\OneDrive\Pulpit\Arkanoid\x64\Debug\Arkanoid.exe

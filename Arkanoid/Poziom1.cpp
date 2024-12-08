@@ -51,78 +51,22 @@ bool collisionTestBlockBall(Block& block, Ball& ball, vector<Buff>& buffs)
     Vector2f blockPosition = block.getPosition();
     block.destroy();
 
-	if (rand() % 4 == 0) // 25% szans na spawnienie buffa
+    if (rand() % 4 == 0) // 25% szans na spawnienie buffa
     {
-		BuffType type = static_cast<BuffType>(-1+rand() % static_cast<int>(BuffType::Count)); // Losowanie typu buffa
+        BuffType type = static_cast<BuffType>(rand() % static_cast<int>(BuffType::ScoreMultiplier) + 1); // Losowanie typu buffa
         std::cout << static_cast<int>(type) << std::endl;
-		buffs.emplace_back(blockPosition.x, blockPosition.y, type); // Dodanie buffa do wektora
+        buffs.emplace_back(blockPosition.x, blockPosition.y, type); // Dodanie buffa do wektora
     }
 
     return true;
 }
 
-bool collisionTestBuffPaddle(Buff& buff, Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, int& extraLives, float& scoreMultiplier, RenderWindow& window)
+bool collisionTestBuffPaddle(Buff& buff, Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier)
 {
     if (!isIntersecting1(buff, paddle))
         return false;
 
-    BuffType randomType = buff.getType();
-
-    switch (randomType)
-    {
-    case BuffType::SpeedUp:
-        ball.setVelocity(ball.getVelocity() * 1.5f);
-        std::cout << "SpeedUp" << std::endl;
-        break;
-    case BuffType::SpeedDown:
-        ball.setVelocity(ball.getVelocity() * 0.5f);
-        std::cout << "SpeedDown" << std::endl;
-        break;
-    case BuffType::SizeUp:
-        paddle.setSize(Vector2f(paddle.getWidth() * 1.5f, paddle.getHeight() * 1.5f));
-        std::cout << "SizeUp" << std::endl;
-        break;
-    case BuffType::SizeDown:
-        paddle.setSize(Vector2f(paddle.getWidth() * 0.5f, paddle.getHeight() * 1.5f));
-        std::cout << "SizeDown" << std::endl;
-        break;
-    case BuffType::ReverseControls:
-        reverseControls = !reverseControls;
-        paddle.setReverseControls(reverseControls);
-        std::cout << "ReverseControls" << std::endl;
-        break;
-    case BuffType::BallSpeedUp:
-        ball.setVelocity(ball.getVelocity() * 2.0f);
-        std::cout << "BallSpeedUp" << std::endl;
-        break;
-    case BuffType::PaddleSpeedUp:
-        paddleSpeedMultiplier *= 2.0f;
-        std::cout << "PaddleSpeedUp" << std::endl;
-        break;
-    /*case BuffType::ScreenShake:
-        window.setView(View(FloatRect(0, 0, 1100, 850)));
-        window.setView(View(FloatRect(rand() % 10 - 5, rand() % 10 - 5, 1100, 850)));
-        std::cout << "ScreenShake" << std::endl;
-        break;*/
-    /*case BuffType::InvisibleBall:
-        ball.setInvisible(true);
-        ball.invisibilityClock.restart();
-        std::cout << "InvisibleBall" << std::endl;
-        break;*/
-    case BuffType::BallSizeUp:
-        ball.setRadius(ball.getRadius() * 2.0f);
-        std::cout << "BallSizeUp" << std::endl;
-        break;
-    case BuffType::BallSizeDown:
-        ball.setRadius(ball.getRadius() * 0.5f);
-        std::cout << "BallSizeDown" << std::endl;
-        break;
-    case BuffType::PaddleSpeedDown:
-        paddleSpeedMultiplier *= 0.5f;
-        std::cout << "PaddleSpeedDown" << std::endl;
-        break;
-    }
-    buff.activate();
+    buff.activate(paddle, ball, reverseControls, paddleSpeedMultiplier, scoreMultiplier);
     return true;
 }
 
@@ -145,15 +89,13 @@ int Poziom1::Start()
     int numberOfBlocks = blocksX * blocksY;
     bool reverseControls = false;
     float paddleSpeedMultiplier = 1.0f;
-    bool invisibleBall = false;
-    int extraLives = 3;
     float scoreMultiplier = 1.0f;
 
     for (unsigned i = 0; i < blocksY; i++)
     {
         for (unsigned j = 0; j < blocksX; j++)
-        {              
-            blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);           
+        {
+            blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
         }
     }
 
@@ -216,7 +158,7 @@ int Poziom1::Start()
                     {
                         Super.close();
                     }
-                    if (aevent.type == Event:: KeyPressed)
+                    if (aevent.type == Event::KeyPressed)
                     {
                         if (aevent.key.code == Keyboard::Escape)
                         {
@@ -260,7 +202,7 @@ int Poziom1::Start()
             it->fall();
             window.draw(*it);
 
-            if (collisionTestBuffPaddle(*it, paddle, ball, reverseControls, paddleSpeedMultiplier, extraLives, scoreMultiplier, window))
+            if (collisionTestBuffPaddle(*it, paddle, ball, reverseControls, paddleSpeedMultiplier, scoreMultiplier))
             {
                 it = buffs.erase(it); // Usuń buff po aktywacji
             }
@@ -277,7 +219,7 @@ int Poziom1::Start()
 
         for (auto it = buffs.begin(); it != buffs.end();)
         {
-            if (it->isEffectActive() && it->getEffectClock().getElapsedTime().asSeconds() >= it->getEffectDuration())
+            if (it->isEffectEnded())
             {
                 it->resetEffect(paddle, ball, reverseControls, paddleSpeedMultiplier, scoreMultiplier);
                 it = buffs.erase(it);

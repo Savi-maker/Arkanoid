@@ -1,12 +1,10 @@
+// Buff.h
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include "Ball.h"
 #include "Paddle.h"
-using namespace sf;
+#include "Ball.h"
 
-enum class BuffType
-{
+enum class BuffType {
     SpeedUp,
     SpeedDown,
     SizeUp,
@@ -14,23 +12,14 @@ enum class BuffType
     ReverseControls,
     BallSpeedUp,
     BallSpeedDown,
-    ScreenShake,
-    InvisibleBall,
-    DoubleBall,
-    BallSizeUp,
-    BallSizeDown,
     PaddleSpeedUp,
     PaddleSpeedDown,
-    ExtraLife,
-    ScoreMultiplier,
-    Count
+    ScoreMultiplier
 };
 
-class Buff : public Drawable
-{
+class Buff : public sf::Drawable {
 public:
     Buff(float t_X, float t_Y, BuffType type);
-    ~Buff() = default;
     Buff(const Buff& other);
     Buff& operator=(const Buff& other);
     void update();
@@ -40,36 +29,23 @@ public:
     float top() const;
     float bottom() const;
     void fall();
-    void activate();
+    void activate(Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier);
     void deactivate();
-    void waitForThreeSeconds();
     bool isEffectActive() const;
     bool isEffectEnded() const;
     void resetEffect(Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier);
-    inline float getEffectDuration() const;
-    inline const sf::Clock& getEffectClock() const;
     void updateEffect();
+    void draw(sf::RenderTarget& target, sf::RenderStates state) const override;
 
 private:
-    RectangleShape shape;
-    RectangleShape progressBar;
+    void waitForThreeSeconds(Paddle& paddle, Ball& ball, bool& reverseControls, float& paddleSpeedMultiplier, float& scoreMultiplier);
+
+    sf::RectangleShape shape;
+    sf::RectangleShape progressBar;
     BuffType type;
     float fallSpeed{ 1.0f };
     sf::Clock effectClock;
     float effectDuration{ 3.0f };
     bool effectActive{ false };
     bool effectEnded{ false };
-    void draw(RenderTarget& target, RenderStates state) const override;
 };
-
-inline float Buff::getEffectDuration() const
-{
-    return effectDuration;
-}
-
-inline const sf::Clock& Buff::getEffectClock() const
-{
-    return effectClock;
-}
-
-
