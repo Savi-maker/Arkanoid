@@ -1,0 +1,52 @@
+\doxysection{Arkanoid/\+Poziom1.cpp File Reference}
+\hypertarget{_poziom1_8cpp}{}\label{_poziom1_8cpp}\index{Arkanoid/Poziom1.cpp@{Arkanoid/Poziom1.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$SFML/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include "{}ball.\+h"{}}\newline
+{\ttfamily \#include "{}Paddle.\+h"{}}\newline
+{\ttfamily \#include "{}Block.\+h"{}}\newline
+{\ttfamily \#include "{}Main\+Menu.\+h"{}}\newline
+{\ttfamily \#include "{}Poziom1.\+h"{}}\newline
+{\ttfamily \#include "{}Buff.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$SFML/\+Audio.\+hpp$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_poziom1_8cpp_acb7d816b93afeca8683a1c37667c7731}{collision\+Test\+Paddle\+Ball}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\item 
+bool \mbox{\hyperlink{_poziom1_8cpp_a5f41ef30c60241031aa2f385855c936a}{collision\+Test\+Block\+Ball}} (\mbox{\hyperlink{class_block}{Block}} \&block, \mbox{\hyperlink{class_ball}{Ball}} \&ball, vector$<$ \mbox{\hyperlink{class_buff}{Buff}} $>$ \&buffs)
+\item 
+bool \mbox{\hyperlink{_poziom1_8cpp_af5671b0fb3c814cc89489b04ff274144}{collision\+Test\+Buff\+Paddle}} (\mbox{\hyperlink{class_buff}{Buff}} \&buff, \mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball, bool \&reverse\+Controls, float \&paddle\+Speed\+Multiplier, float \&score\+Multiplier)
+\item 
+bool \mbox{\hyperlink{_poziom1_8cpp_aa35579658bd2ad5db107a061421634d6}{is\+Game\+Over1}} (\mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_poziom1_8cpp_a5f41ef30c60241031aa2f385855c936a}\index{Poziom1.cpp@{Poziom1.cpp}!collisionTestBlockBall@{collisionTestBlockBall}}
+\index{collisionTestBlockBall@{collisionTestBlockBall}!Poziom1.cpp@{Poziom1.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTestBlockBall()}{collisionTestBlockBall()}}
+{\footnotesize\ttfamily \label{_poziom1_8cpp_a5f41ef30c60241031aa2f385855c936a} 
+bool collision\+Test\+Block\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} \&}]{block}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{, }\item[{vector$<$ \mbox{\hyperlink{class_buff}{Buff}} $>$ \&}]{buffs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_poziom1_8cpp_af5671b0fb3c814cc89489b04ff274144}\index{Poziom1.cpp@{Poziom1.cpp}!collisionTestBuffPaddle@{collisionTestBuffPaddle}}
+\index{collisionTestBuffPaddle@{collisionTestBuffPaddle}!Poziom1.cpp@{Poziom1.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTestBuffPaddle()}{collisionTestBuffPaddle()}}
+{\footnotesize\ttfamily \label{_poziom1_8cpp_af5671b0fb3c814cc89489b04ff274144} 
+bool collision\+Test\+Buff\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_buff}{Buff}} \&}]{buff}{, }\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{, }\item[{bool \&}]{reverse\+Controls}{, }\item[{float \&}]{paddle\+Speed\+Multiplier}{, }\item[{float \&}]{score\+Multiplier}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_poziom1_8cpp_acb7d816b93afeca8683a1c37667c7731}\index{Poziom1.cpp@{Poziom1.cpp}!collisionTestPaddleBall@{collisionTestPaddleBall}}
+\index{collisionTestPaddleBall@{collisionTestPaddleBall}!Poziom1.cpp@{Poziom1.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTestPaddleBall()}{collisionTestPaddleBall()}}
+{\footnotesize\ttfamily \label{_poziom1_8cpp_acb7d816b93afeca8683a1c37667c7731} 
+bool collision\+Test\+Paddle\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_poziom1_8cpp_aa35579658bd2ad5db107a061421634d6}\index{Poziom1.cpp@{Poziom1.cpp}!isGameOver1@{isGameOver1}}
+\index{isGameOver1@{isGameOver1}!Poziom1.cpp@{Poziom1.cpp}}
+\doxysubsubsection{\texorpdfstring{isGameOver1()}{isGameOver1()}}
+{\footnotesize\ttfamily \label{_poziom1_8cpp_aa35579658bd2ad5db107a061421634d6} 
+bool is\+Game\+Over1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+

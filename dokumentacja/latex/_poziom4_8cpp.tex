@@ -1,0 +1,69 @@
+\doxysection{Arkanoid/\+Poziom4.cpp File Reference}
+\hypertarget{_poziom4_8cpp}{}\label{_poziom4_8cpp}\index{Arkanoid/Poziom4.cpp@{Arkanoid/Poziom4.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$SFML/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include "{}Ball.\+h"{}}\newline
+{\ttfamily \#include "{}Paddle.\+h"{}}\newline
+{\ttfamily \#include "{}Block.\+h"{}}\newline
+{\ttfamily \#include "{}Main\+Menu.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include "{}Poziom4.\+h"{}}\newline
+{\ttfamily \#include $<$SFML/\+Audio.\+hpp$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1, class T2$>$ }\\bool \mbox{\hyperlink{_poziom4_8cpp_ade87fbef927fdeee5a9177e9cff8c6db}{is\+Intersecting4}} (T1 \&A, T2 \&B)
+\begin{DoxyCompactList}\small\item\em Szablon klasy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom4_8cpp_a7c013869a75b17cdda4796c279c447cf}{collision\+Test4}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test4 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom4_8cpp_a7e122c26c87de4fb52159e729896a6b9}{collision\+Test4}} (\mbox{\hyperlink{class_block}{Block}} \&block, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test4 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom4_8cpp_a753e59fcd3a3a5008ae430a11c27d234}{is\+Game\+Over4}} (\mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em is\+Game\+Over4 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_poziom4_8cpp_a7e122c26c87de4fb52159e729896a6b9}\index{Poziom4.cpp@{Poziom4.cpp}!collisionTest4@{collisionTest4}}
+\index{collisionTest4@{collisionTest4}!Poziom4.cpp@{Poziom4.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest4()}{collisionTest4()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_poziom4_8cpp_a7e122c26c87de4fb52159e729896a6b9} 
+bool collision\+Test4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} \&}]{block}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test4 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje bloku i pileczki Sprawdza czy oba obiekty na siebie nachodza Przy odpowiednim warunku zniszcz blok Zmienne float z dwoma metodami klasy Instrukcja warunkowa, sprawdza w jaki sposob powinna odbic sie pilka \Hypertarget{_poziom4_8cpp_a7c013869a75b17cdda4796c279c447cf}\index{Poziom4.cpp@{Poziom4.cpp}!collisionTest4@{collisionTest4}}
+\index{collisionTest4@{collisionTest4}!Poziom4.cpp@{Poziom4.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest4()}{collisionTest4()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_poziom4_8cpp_a7c013869a75b17cdda4796c279c447cf} 
+bool collision\+Test4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test4 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje paletki i pileczki Sprawdza czy oba obiekty na siebie nachodza Zabawa grawitacja, losujemy w jaki sposob ma sie odbic pileczka od paletki \Hypertarget{_poziom4_8cpp_a753e59fcd3a3a5008ae430a11c27d234}\index{Poziom4.cpp@{Poziom4.cpp}!isGameOver4@{isGameOver4}}
+\index{isGameOver4@{isGameOver4}!Poziom4.cpp@{Poziom4.cpp}}
+\doxysubsubsection{\texorpdfstring{isGameOver4()}{isGameOver4()}}
+{\footnotesize\ttfamily \label{_poziom4_8cpp_a753e59fcd3a3a5008ae430a11c27d234} 
+bool is\+Game\+Over4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+is\+Game\+Over4 
+
+Instrukcja warunkowa, sprawdza czy pilka spadla na dol planszy \Hypertarget{_poziom4_8cpp_ade87fbef927fdeee5a9177e9cff8c6db}\index{Poziom4.cpp@{Poziom4.cpp}!isIntersecting4@{isIntersecting4}}
+\index{isIntersecting4@{isIntersecting4}!Poziom4.cpp@{Poziom4.cpp}}
+\doxysubsubsection{\texorpdfstring{isIntersecting4()}{isIntersecting4()}}
+{\footnotesize\ttfamily \label{_poziom4_8cpp_ade87fbef927fdeee5a9177e9cff8c6db} 
+template$<$class T1, class T2$>$ \\
+bool is\+Intersecting4 (\begin{DoxyParamCaption}\item[{T1 \&}]{A}{, }\item[{T2 \&}]{B}{}\end{DoxyParamCaption})}
+
+
+
+Szablon klasy. 
+
+Funkcja z 2 argumentami szablonowymi, uniwersalna funckja, pozwoli nam sprawdzaæ kolizje miedzy roznymi obiektami Zwraca dana krawedz obiektu w pixelach 

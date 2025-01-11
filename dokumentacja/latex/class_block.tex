@@ -1,0 +1,257 @@
+\doxysection{Block Class Reference}
+\hypertarget{class_block}{}\label{class_block}\index{Block@{Block}}
+
+
+Klasa reprezentuj¹ca blok w grze.  
+
+
+
+
+{\ttfamily \#include $<$Block.\+h$>$}
+
+Inheritance diagram for Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_a3b60a09c08c62fb8e2550e383e75bc75}{Block}} (float t\+\_\+X, float t\+\_\+Y, float t\+\_\+\+Width, float t\+\_\+\+Height)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_block}{Block}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_a19d1bd0e1cef6a865ed2745a2e648405}{\texorpdfstring{$\sim$}{\string~}\+Block}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_block}{Block}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_a10e17f44df4d273c16190732197578f2}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan bloku. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_block_a3dddb8c3c22a3154a9ad3f98c3455910}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca pozycjê bloku. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_block_a5e68534cb4acaec4258bcfe91818fe95}{left}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca lew¹ pozycjê bloku. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_block_a38be557b4ae9b9a02b0bd226da24b1be}{right}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca praw¹ pozycjê bloku. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_block_aff1ceda88326816476f0c99aa9cf74da}{top}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca górn¹ pozycjê bloku. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_block_ab013e6f78073abd2cd2cd558f4351852}{bottom}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca doln¹ pozycjê bloku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_block_a6851e32c68661625e5b2bde310f53c90}{is\+Destroyed}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy blok jest zniszczony. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_block_a27b3bed5a1064d818cd61915f3a380bb}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Niszczy blok. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_block_a34274a6fdbb0335f7523d525358a7ddd}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca rozmiar bloku. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_a6520d7f3f1bfadaf084de8b9e989e4f6}{draw}} (Render\+Target \&target, Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em Rysuje blok na ekranie. \end{DoxyCompactList}\item 
+Rectangle\+Shape \& \mbox{\hyperlink{class_block_a1b8e2698d5512920270e4d436370cfc9}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kszta³t bloku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca blok w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_block_a3b60a09c08c62fb8e2550e383e75bc75}\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{Block()}{Block()}}
+{\footnotesize\ttfamily \label{class_block_a3b60a09c08c62fb8e2550e383e75bc75} 
+Block\+::\+Block (\begin{DoxyParamCaption}\item[{float}]{t\+\_\+X}{, }\item[{float}]{t\+\_\+Y}{, }\item[{float}]{t\+\_\+\+Width}{, }\item[{float}]{t\+\_\+\+Height}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_block}{Block}. 
+
+\doxylink{_block_8cpp}{Block.\+cpp}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+X} & Pozycja X bloku. \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y bloku. \\
+\hline
+{\em t\+\_\+\+Width} & Szerokoœæ bloku. \\
+\hline
+{\em t\+\_\+\+Height} & Wysokoœæ bloku.\\
+\hline
+\end{DoxyParams}
+Plik zawierajcy kod implementujcy bloki "{}\#include "{}\doxylink{_block_8h}{Block.\+h}"{}"{} -\/ plik naglowkowy \doxylink{class_block}{Block}\+:\+: Metoda klasy zawierajaca konstruktor Implementacja pozycji bloku na plaszcyznie oznaczona osiami "{}x"{} oraz "{}y"{} Implementacja rozmiaru bloku na planszy Implementacja koloru bloku na planszy Implementacja kontorow bloku \Hypertarget{class_block_a19d1bd0e1cef6a865ed2745a2e648405}\index{Block@{Block}!````~Block@{\texorpdfstring{$\sim$}{\string~}Block}}
+\index{````~Block@{\texorpdfstring{$\sim$}{\string~}Block}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Block()}{\string~Block()}}
+{\footnotesize\ttfamily \label{class_block_a19d1bd0e1cef6a865ed2745a2e648405} 
+Block\+::\texorpdfstring{$\sim$}{\string~}\+Block (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_block}{Block}. 
+
+Destruktor.
+
+Definicja destruktora klasy \doxylink{class_block}{Block} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_block_ab013e6f78073abd2cd2cd558f4351852}\index{Block@{Block}!bottom@{bottom}}
+\index{bottom@{bottom}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily \label{class_block_ab013e6f78073abd2cd2cd558f4351852} 
+float Block\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca doln¹ pozycjê bloku. 
+
+bottom
+
+\begin{DoxyReturn}{Returns}
+Dolna pozycja bloku.
+\end{DoxyReturn}
+Typ zwracajacy pozycje kulki poprzez pobranie pozycji x i odjecia od srodka promienia co daje uzyskc pozycje dolnej jej krawiedzi \Hypertarget{class_block_a27b3bed5a1064d818cd61915f3a380bb}\index{Block@{Block}!destroy@{destroy}}
+\index{destroy@{destroy}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_block_a27b3bed5a1064d818cd61915f3a380bb} 
+void Block\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Niszczy blok. 
+
+destroy
+
+Funkcja niszczaca bloczek funkja niszczy \Hypertarget{class_block_a6520d7f3f1bfadaf084de8b9e989e4f6}\index{Block@{Block}!draw@{draw}}
+\index{draw@{draw}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_block_a6520d7f3f1bfadaf084de8b9e989e4f6} 
+void Block\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target}{, }\item[{Render\+States}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rysuje blok na ekranie. 
+
+draw
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Obiekt docelowy renderowania. \\
+\hline
+{\em states} & Stan renderowania.\\
+\hline
+\end{DoxyParams}
+Funkcja rysujaca blok Implementacja bloku za pomoca instrukji sfml \Hypertarget{class_block_a3dddb8c3c22a3154a9ad3f98c3455910}\index{Block@{Block}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_block_a3dddb8c3c22a3154a9ad3f98c3455910} 
+Vector2f Block\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca pozycjê bloku. 
+
+get\+Position
+
+\begin{DoxyReturn}{Returns}
+Pozycja bloku.
+\end{DoxyReturn}
+Funkcja wektorowa Funkja zwraca pozycje bloku \Hypertarget{class_block_a1b8e2698d5512920270e4d436370cfc9}\index{Block@{Block}!getShape@{getShape}}
+\index{getShape@{getShape}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \label{class_block_a1b8e2698d5512920270e4d436370cfc9} 
+Rectangle\+Shape \& Block\+::get\+Shape (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca kszta³t bloku. 
+
+\begin{DoxyReturn}{Returns}
+Referencja do kszta³tu bloku. 
+\end{DoxyReturn}
+\Hypertarget{class_block_a34274a6fdbb0335f7523d525358a7ddd}\index{Block@{Block}!getSize@{getSize}}
+\index{getSize@{getSize}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_block_a34274a6fdbb0335f7523d525358a7ddd} 
+Vector2f Block\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca rozmiar bloku. 
+
+get\+Size
+
+\begin{DoxyReturn}{Returns}
+Rozmiar bloku.
+\end{DoxyReturn}
+Funkcja wektrorowa Funkcja zwraca rozmiar bloku \Hypertarget{class_block_a6851e32c68661625e5b2bde310f53c90}\index{Block@{Block}!isDestroyed@{isDestroyed}}
+\index{isDestroyed@{isDestroyed}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{isDestroyed()}{isDestroyed()}}
+{\footnotesize\ttfamily \label{class_block_a6851e32c68661625e5b2bde310f53c90} 
+bool Block\+::is\+Destroyed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza, czy blok jest zniszczony. 
+
+is\+Destoyed
+
+\begin{DoxyReturn}{Returns}
+true, jeœli blok jest zniszczony; w przeciwnym razie false.
+\end{DoxyReturn}
+Funkcja sprawdzajaca czy bloczek jest znisczony \Hypertarget{class_block_a5e68534cb4acaec4258bcfe91818fe95}\index{Block@{Block}!left@{left}}
+\index{left@{left}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \label{class_block_a5e68534cb4acaec4258bcfe91818fe95} 
+float Block\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca lew¹ pozycjê bloku. 
+
+left
+
+\begin{DoxyReturn}{Returns}
+Lewa pozycja bloku.
+\end{DoxyReturn}
+Typ zwracajacy pozycje kulki poprzez pobranie pozycji x i odjecia od srodka promienia co daje uzyskc pozycje lewej jej krawiedzi \Hypertarget{class_block_a38be557b4ae9b9a02b0bd226da24b1be}\index{Block@{Block}!right@{right}}
+\index{right@{right}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \label{class_block_a38be557b4ae9b9a02b0bd226da24b1be} 
+float Block\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca praw¹ pozycjê bloku. 
+
+right
+
+\begin{DoxyReturn}{Returns}
+Prawa pozycja bloku.
+\end{DoxyReturn}
+Typ zwracajacy pozycje kulki poprzez pobranie pozycji x i odjecia od srodka promienia co daje uzyskc pozycje prawej jej krawiedzi \Hypertarget{class_block_aff1ceda88326816476f0c99aa9cf74da}\index{Block@{Block}!top@{top}}
+\index{top@{top}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{class_block_aff1ceda88326816476f0c99aa9cf74da} 
+float Block\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca górn¹ pozycjê bloku. 
+
+top
+
+\begin{DoxyReturn}{Returns}
+Górna pozycja bloku.
+\end{DoxyReturn}
+Typ zwracajacy pozycje kulki poprzez pobranie pozycji x i odjecia od srodka promienia co daje uzyskc pozycje gornrj jej krawiedzi \Hypertarget{class_block_a10e17f44df4d273c16190732197578f2}\index{Block@{Block}!update@{update}}
+\index{update@{update}!Block@{Block}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_block_a10e17f44df4d273c16190732197578f2} 
+void Block\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan bloku. 
+
+update
+
+Funkcja odswiezajaca Funkcja odswieza plansze po zniszczeniu bloku z aktualna pozycja pileczki 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Arkanoid/\mbox{\hyperlink{_block_8h}{Block.\+h}}\item 
+Arkanoid/\mbox{\hyperlink{_block_8cpp}{Block.\+cpp}}\end{DoxyCompactItemize}

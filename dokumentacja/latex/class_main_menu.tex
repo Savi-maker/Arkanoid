@@ -1,0 +1,131 @@
+\doxysection{Main\+Menu Class Reference}
+\hypertarget{class_main_menu}{}\label{class_main_menu}\index{MainMenu@{MainMenu}}
+
+
+Klasa reprezentuj¹ca menu g³ówne.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Menu.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_menu_a627ae8ece11285fa9829352cabfe46b7}{Main\+Menu}} (float width, float height)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_main_menu}{Main\+Menu}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_menu_aaa6dd3530daa2b039ef0a760484246b1}{draw}} (Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Rysuje menu na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_menu_a352539477da74ad45c57958ddda1209c}{Move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa zaznaczenie w menu w górê. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_menu_a91b6953e2b62bac412f4c6dbf26cb4d9}{Move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa zaznaczenie w menu w dó³. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_main_menu_a8255f9c06b02b9c149a5b594cddc9252}{Main\+Menu\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca indeks wybranej opcji menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2}{\texorpdfstring{$\sim$}{\string~}\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_main_menu}{Main\+Menu}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca menu g³ówne. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_menu_a627ae8ece11285fa9829352cabfe46b7}\index{MainMenu@{MainMenu}!MainMenu@{MainMenu}}
+\index{MainMenu@{MainMenu}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{MainMenu()}{MainMenu()}}
+{\footnotesize\ttfamily \label{class_main_menu_a627ae8ece11285fa9829352cabfe46b7} 
+Main\+Menu\+::\+Main\+Menu (\begin{DoxyParamCaption}\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_main_menu}{Main\+Menu}. 
+
+\doxylink{class_main_menu}{Main\+Menu}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Szerokoœæ okna. \\
+\hline
+{\em height} & Wysokoœæ okna.\\
+\hline
+\end{DoxyParams}
+Implementacja przekazania przez konsruktor menu gry oraz stworzenie napisow widocznych w menu gry. Zaimplementowano tu wszystkie wartosci graficzne takie jak wielkosc ,kolor oraz tresc napisow. \Hypertarget{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2}\index{MainMenu@{MainMenu}!````~MainMenu@{\texorpdfstring{$\sim$}{\string~}MainMenu}}
+\index{````~MainMenu@{\texorpdfstring{$\sim$}{\string~}MainMenu}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainMenu()}{\string~MainMenu()}}
+{\footnotesize\ttfamily \label{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2} 
+Main\+Menu\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_main_menu}{Main\+Menu}. 
+
+\texorpdfstring{$\sim$}{\string~}\+Main\+Menu
+
+Implementacja klasy menu oraz destruktora menu. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_menu_aaa6dd3530daa2b039ef0a760484246b1}\index{MainMenu@{MainMenu}!draw@{draw}}
+\index{draw@{draw}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_main_menu_aaa6dd3530daa2b039ef0a760484246b1} 
+void Main\+Menu\+::draw (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Rysuje menu na ekranie. 
+
+draw
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em window} & Okno renderowania.\\
+\hline
+\mbox{\texttt{ in}}  & {\em $<$i$>$} & \texorpdfstring{$<$}{<} zmienna okreslajaca polozenia aktualnego wskaznika w grze (podswietlenie). fukcja rysujaca menu ktora sprawdza w ktorym miejscu menu aktualnie znajduje sie wskaznik (podswietlenie tekstu). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_main_menu_a8255f9c06b02b9c149a5b594cddc9252}\index{MainMenu@{MainMenu}!MainMenuPressed@{MainMenuPressed}}
+\index{MainMenuPressed@{MainMenuPressed}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{MainMenuPressed()}{MainMenuPressed()}}
+{\footnotesize\ttfamily \label{class_main_menu_a8255f9c06b02b9c149a5b594cddc9252} 
+int Main\+Menu\+::\+Main\+Menu\+Pressed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca indeks wybranej opcji menu. 
+
+\begin{DoxyReturn}{Returns}
+Indeks wybranej opcji menu. 
+\end{DoxyReturn}
+\Hypertarget{class_main_menu_a91b6953e2b62bac412f4c6dbf26cb4d9}\index{MainMenu@{MainMenu}!MoveDown@{MoveDown}}
+\index{MoveDown@{MoveDown}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{MoveDown()}{MoveDown()}}
+{\footnotesize\ttfamily \label{class_main_menu_a91b6953e2b62bac412f4c6dbf26cb4d9} 
+void Main\+Menu\+::\+Move\+Down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa zaznaczenie w menu w dó³. 
+
+Move\+Downu.
+
+Funkcja pozwalajaca na ruch w dol po glownym menu Kiedy wskaznik (podswietlenie) zostanie przesuniety przez uzytkownika program przestanie wskazywc aktualny wybor w menu gry a podsiwtli nowy. Zastosowano instrukcje warunkowa "{}if"{}. Definiujemy maksymalny roamiar menu jako 4 \Hypertarget{class_main_menu_a352539477da74ad45c57958ddda1209c}\index{MainMenu@{MainMenu}!MoveUp@{MoveUp}}
+\index{MoveUp@{MoveUp}!MainMenu@{MainMenu}}
+\doxysubsubsection{\texorpdfstring{MoveUp()}{MoveUp()}}
+{\footnotesize\ttfamily \label{class_main_menu_a352539477da74ad45c57958ddda1209c} 
+void Main\+Menu\+::\+Move\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa zaznaczenie w menu w górê. 
+
+Move\+Up.
+
+Funkcja pozwalajaca na ruch do gory po glownym menu Kiedy wskaznik (podswietlenie) zostanie przesuniety przez uzytkownika program przestanie wskazywc aktualny wybor w menu gry a podsiwtli nowy.
+\begin{DoxyItemize}
+\item Zastosowano instrukcje warunkowa "{}if"{}. 
+\end{DoxyItemize}jesli najedzimy na opcje to zmienia sie podswietlenie z poprzednie zmienia na kolor domyslny
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Arkanoid/\mbox{\hyperlink{_main_menu_8h}{Main\+Menu.\+h}}\item 
+Arkanoid/\mbox{\hyperlink{_main_menu_8cpp}{Main\+Menu.\+cpp}}\end{DoxyCompactItemize}

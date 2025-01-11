@@ -122,6 +122,9 @@ Vector2f Block::getSize()
 	return shape.getSize();
 }
 
+RectangleShape& Block::getShape() {
+	return shape;
+}
 ///update 
 /**
 * Funkcja odswiezajaca

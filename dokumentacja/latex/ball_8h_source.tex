@@ -1,0 +1,78 @@
+\doxysection{ball.\+h}
+\hypertarget{ball_8h_source}{}\label{ball_8h_source}\index{Arkanoid/ball.h@{Arkanoid/ball.h}}
+\mbox{\hyperlink{ball_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/System/Clock.hpp>}\ \textcolor{comment}{//\ Dodaj\ ten\ include}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_paddle_8h}{Paddle.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ball_ab1915740b75f6ccf41d2251d6f499492}{Ball}}\ :\ \textcolor{keyword}{public}\ Drawable}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_ball_abeb601a3331873f25c7086cd4f83e9b4}{Ball}}(\textcolor{keywordtype}{float}\ t\_X,\ \textcolor{keywordtype}{float}\ t\_Y);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_ball_abeb601a3331873f25c7086cd4f83e9b4}{Ball}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_ball_aacc0c1db85eb16e1ae9ad6daffd3c13e}{\string~Ball}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_af30f4707d26a6e7ba0af1dd8cac37684}{update}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_af30f4707d26a6e7ba0af1dd8cac37684}{update}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_paddle}{Paddle}}\&\ paddle);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_afb36e5574f9fe428048bb8b09506cb72}{moveUp}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_adce7df33371cfa3752e124ae2b942ac4}{moveUpLeft}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_af506ba70a6e1c356525e7233d7f63b79}{moveUpRight}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a097ca955e51c809a7b7486ec7f68bcd8}{moveDown}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a1c9b2070d13f77267761e3035767fedb}{moveDownLeft}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a478adfabad202153d72ddb423272e923}{moveDownRight}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_aeac32b787711d2ce4baa41592e384bab}{moveRight}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_ab50947921f203f92a3bfcf424247a47f}{moveLeft}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_ball_a70e88464efdf5fcbffe8e5fbeb706076}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_a823a3ef49154d3132816f626fbcc4c1a}{left}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_abc41f7a60b5e5589c5d28e764e647408}{right}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_a5e83480c7ca1b72f144f0bf27f88878a}{top}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_acd5816f43a5ae6e1fe345596a39910a5}{bottom}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00115\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_ball_a68663f04c2d092fa4dd3a2fddee79a44}{getVelocity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a9b4ac3f1e7a76104005df37e954e3ff0}{setVelocity}}(\textcolor{keyword}{const}\ Vector2f\&\ newVelocity);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_ac93d35a55e06ca1a406cf3cbc49f4e12}{getRadius}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a7f8d844948ccc5111ee4b60cdb3ed42f}{setRadius}}(\textcolor{keywordtype}{float}\ radius);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a8445dbb07dda6358b3b29e642e335820}{setInvisible}}(\textcolor{keywordtype}{bool}\ invisible);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a9b1a362cb703628cb9a744b506f90ca2}{draw}}(RenderTarget\&\ target,\ RenderStates\ state)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_a07ea05fe7ec210196bd95fd186a285d7}{checkCollisionWithPaddle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_paddle}{Paddle}}\&\ paddle);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ sf::Clock\ \mbox{\hyperlink{class_ball_a0361fc18a91dede32a2cb0c90a2cfb6d}{invisibilityClock}};\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_ball_a8c216b45c93e9020617ee8f1bd3abd87}{invisibilityDuration}}\{\ 1.0f\ \};\ }
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ball_ae5fe0d626dfc5c0b7fb06d4e9f3f45a6}{updateInvisibility}}();}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00163\ \ \ \ \ CircleShape\ shape;\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ ballRadius\{\ 10.0f\ \};\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{float}\ ballVelocity\{\ 5.0f\ \};\ }
+\DoxyCodeLine{00166\ \ \ \ \ Vector2f\ velocity;\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{bool}\ invisible\{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00168\ \}}
+\DoxyCodeLine{00169\ ;}
+
+\end{DoxyCode}

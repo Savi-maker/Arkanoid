@@ -1,0 +1,23 @@
+\doxysection{Score\+Manager.\+h}
+\hypertarget{_score_manager_8h_source}{}\label{_score_manager_8h_source}\index{Arkanoid/ScoreManager.h@{Arkanoid/ScoreManager.h}}
+\mbox{\hyperlink{_score_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ ScoreManager.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_score_manager_a8952a17614ae60b3191a812728bd55fc}{ScoreManager}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_score_manager_a8952a17614ae60b3191a812728bd55fc}{ScoreManager}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_a842a2834c5bb44d292e3f054d2612240}{addScore}}(\textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_aa3f390fe5076324b2d457de0c43af59f}{saveScores}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_a91233469cc1823684930654b9a33af91}{loadScores}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\&\ \mbox{\hyperlink{class_score_manager_a6c3d036e25b3c2cea4e34ed8c00442e8}{getScores}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ std::vector<int>\ scores;}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{00017\ \};}
+
+\end{DoxyCode}

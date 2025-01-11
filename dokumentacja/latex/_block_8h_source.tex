@@ -1,0 +1,45 @@
+\doxysection{Block.\+h}
+\hypertarget{_block_8h_source}{}\label{_block_8h_source}\index{Arkanoid/Block.h@{Arkanoid/Block.h}}
+\mbox{\hyperlink{_block_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_block_a3b60a09c08c62fb8e2550e383e75bc75}{Block}}\ :\ \textcolor{keyword}{public}\ Drawable}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_block_a3b60a09c08c62fb8e2550e383e75bc75}{Block}}(\textcolor{keywordtype}{float}\ t\_X,\ \textcolor{keywordtype}{float}\ t\_Y,\ \textcolor{keywordtype}{float}\ t\_Width,\ \textcolor{keywordtype}{float}\ t\_Height);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_block_a19d1bd0e1cef6a865ed2745a2e648405}{\string~Block}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_a10e17f44df4d273c16190732197578f2}{update}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_block_a3dddb8c3c22a3154a9ad3f98c3455910}{getPosition}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_block_a5e68534cb4acaec4258bcfe91818fe95}{left}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_block_a38be557b4ae9b9a02b0bd226da24b1be}{right}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_block_aff1ceda88326816476f0c99aa9cf74da}{top}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_block_ab013e6f78073abd2cd2cd558f4351852}{bottom}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_block_a6851e32c68661625e5b2bde310f53c90}{isDestroyed}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_a27b3bed5a1064d818cd61915f3a380bb}{destroy}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_block_a34274a6fdbb0335f7523d525358a7ddd}{getSize}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_a6520d7f3f1bfadaf084de8b9e989e4f6}{draw}}(RenderTarget\&\ target,\ RenderStates\ states)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \ \ RectangleShape\&\ \mbox{\hyperlink{class_block_a1b8e2698d5512920270e4d436370cfc9}{getShape}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ RectangleShape\ shape;\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ destroyed\{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00094\ \}}
+\DoxyCodeLine{00095\ ;}
+
+\end{DoxyCode}

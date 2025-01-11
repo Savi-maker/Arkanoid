@@ -178,15 +178,17 @@ int Poziom6::Start()
     int destroyedBlocks = 0; // Licznik zniszczonych bloków
     bool isFlipped = false; // Flaga odwrócenia ekranu
 
-    for (int i = 0; i < blocksY; i++)
+    Texture blockTexture;
+    blockTexture.loadFromFile("Textury/platforma.png");
+
+    // Tworzenie bloków
+    for (unsigned i = 0; i < blocksY; i++)
     {
-        for (int j = 0; j < blocksX; j++)
+        for (unsigned j = 0; j < blocksX; j++)
         {
-            // Tworzenie bloku tylko na co drugim polu
-            if ((i + j) % 2 == 0)  // co drugie pole tworzy blok, reszta jest pusta
-            {
-                blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
-            }
+            Block block((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
+            block.getShape().setTexture(&blockTexture); // U¿yj metody getShape
+            blocks.push_back(block);
         }
     }
 

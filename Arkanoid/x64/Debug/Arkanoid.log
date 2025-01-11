@@ -1,15 +1,10 @@
-﻿  OknoMenu.cpp
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(43,6): warning C4326: zwracany typ "main" powinien być "int" zamiast "void"
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,52): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         with
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         [
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,52): warning C4244:             T=unsigned int
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,52): warning C4244:         ]
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,34): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         with
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         [
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,34): warning C4244:             T=unsigned int
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(47,34): warning C4244:         ]
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(245,68): warning C4244: "argument": konwersja z "size_t" do "float", możliwa utrata danych
-C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\OknoMenu.cpp(245,49): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+﻿  Poziom2.cpp
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(173,100): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(173,88): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(173,66): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(173,37): warning C4244: "argument": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(215,23): warning C4101: "aevent": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(88,1): warning C4715: "isGameOver2”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(77,1): warning C4715: "collisionTest2”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\schod\OneDrive\Pulpit\Arkanoid\Arkanoid\Poziom2.cpp(299,1): warning C4715: "Poziom2::Start”: niewszystkie ścieżki kodu zwracają wartość
   Arkanoid.vcxproj -> C:\Users\schod\OneDrive\Pulpit\Arkanoid\x64\Debug\Arkanoid.exe

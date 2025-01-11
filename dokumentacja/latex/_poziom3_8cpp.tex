@@ -1,0 +1,69 @@
+\doxysection{Arkanoid/\+Poziom3.cpp File Reference}
+\hypertarget{_poziom3_8cpp}{}\label{_poziom3_8cpp}\index{Arkanoid/Poziom3.cpp@{Arkanoid/Poziom3.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$SFML/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include "{}Ball.\+h"{}}\newline
+{\ttfamily \#include "{}Paddle.\+h"{}}\newline
+{\ttfamily \#include "{}Block.\+h"{}}\newline
+{\ttfamily \#include "{}Main\+Menu.\+h"{}}\newline
+{\ttfamily \#include "{}Poziom3.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$SFML/\+Audio.\+hpp$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1, class T2$>$ }\\bool \mbox{\hyperlink{_poziom3_8cpp_aa8d9c4b4ae78dc69f6f707b1fb23c6f8}{is\+Intersecting3}} (T1 \&A, T2 \&B)
+\begin{DoxyCompactList}\small\item\em Szablon klasy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom3_8cpp_aa37a2e4b29eead6878a67ffd209295a4}{collision\+Test3}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test3 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom3_8cpp_a39cbb73617c56f654f9152dadf1378b4}{collision\+Test3}} (\mbox{\hyperlink{class_block}{Block}} \&block, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test3 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom3_8cpp_aa6c822ac00c8f571cfeb3d271eb95dd3}{is\+Game\+Over3}} (\mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em is\+Game\+Over3 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_poziom3_8cpp_a39cbb73617c56f654f9152dadf1378b4}\index{Poziom3.cpp@{Poziom3.cpp}!collisionTest3@{collisionTest3}}
+\index{collisionTest3@{collisionTest3}!Poziom3.cpp@{Poziom3.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest3()}{collisionTest3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_poziom3_8cpp_a39cbb73617c56f654f9152dadf1378b4} 
+bool collision\+Test3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} \&}]{block}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test3 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje bloku i pileczki Sprawdza czy oba obiekty na siebie nachodza Przy odpowiednim warunku zniszcz blok Zmienne float z dwoma metodami klasy Instrukcja warunkowa, sprawdza w jaki sposob powinna odbic sie pilka \Hypertarget{_poziom3_8cpp_aa37a2e4b29eead6878a67ffd209295a4}\index{Poziom3.cpp@{Poziom3.cpp}!collisionTest3@{collisionTest3}}
+\index{collisionTest3@{collisionTest3}!Poziom3.cpp@{Poziom3.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest3()}{collisionTest3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_poziom3_8cpp_aa37a2e4b29eead6878a67ffd209295a4} 
+bool collision\+Test3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test3 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje paletki i pileczki Sprawdza czy oba obiekty na siebie nachodza Zabawa grawitacja, losujemy w jaki sposob ma sie odbic pileczka od paletki \Hypertarget{_poziom3_8cpp_aa6c822ac00c8f571cfeb3d271eb95dd3}\index{Poziom3.cpp@{Poziom3.cpp}!isGameOver3@{isGameOver3}}
+\index{isGameOver3@{isGameOver3}!Poziom3.cpp@{Poziom3.cpp}}
+\doxysubsubsection{\texorpdfstring{isGameOver3()}{isGameOver3()}}
+{\footnotesize\ttfamily \label{_poziom3_8cpp_aa6c822ac00c8f571cfeb3d271eb95dd3} 
+bool is\+Game\+Over3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+is\+Game\+Over3 
+
+Instrukcja warunkowa, sprawdza czy pilka spadla na dol planszy \Hypertarget{_poziom3_8cpp_aa8d9c4b4ae78dc69f6f707b1fb23c6f8}\index{Poziom3.cpp@{Poziom3.cpp}!isIntersecting3@{isIntersecting3}}
+\index{isIntersecting3@{isIntersecting3}!Poziom3.cpp@{Poziom3.cpp}}
+\doxysubsubsection{\texorpdfstring{isIntersecting3()}{isIntersecting3()}}
+{\footnotesize\ttfamily \label{_poziom3_8cpp_aa8d9c4b4ae78dc69f6f707b1fb23c6f8} 
+template$<$class T1, class T2$>$ \\
+bool is\+Intersecting3 (\begin{DoxyParamCaption}\item[{T1 \&}]{A}{, }\item[{T2 \&}]{B}{}\end{DoxyParamCaption})}
+
+
+
+Szablon klasy. 
+
+Funkcja z 2 argumentami szablonowymi, uniwersalna funckja, pozwoli nam sprawdzaæ kolizje miedzy roznymi obiektami Zwraca dana krawedz obiektu w pixelach 

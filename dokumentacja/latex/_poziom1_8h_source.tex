@@ -1,0 +1,32 @@
+\doxysection{Poziom1.\+h}
+\hypertarget{_poziom1_8h_source}{}\label{_poziom1_8h_source}\index{Arkanoid/Poziom1.h@{Arkanoid/Poziom1.h}}
+\mbox{\hyperlink{_poziom1_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_buff_8h}{Buff.h}}"{}}\ \textcolor{comment}{//\ Dodano\ nag³ówek\ Buff}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T1,\ \textcolor{keyword}{class}\ T2>}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_poziom1_8h_a5a94895352909842920a625e139de01a}{isIntersecting1}}(T1\&\ A,\ T2\&\ B)}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ A.right()\ >=\ B.left()\ \&\&\ A.left()\ <=\ B.right()\ \&\&\ A.bottom()\ >=\ B.top()\ \&\&\ A.top()\ <=\ B.bottom();}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_poziom1}{Poziom1}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_poziom1_a03dd1f10b4eee21dc538122f20572952}{Start}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_poziom1_a0f37385873edba83de45821d27855dde}{\string~Poziom1}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ vector<Buff>\ buffs;\ }
+\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00045\ ;}
+
+\end{DoxyCode}

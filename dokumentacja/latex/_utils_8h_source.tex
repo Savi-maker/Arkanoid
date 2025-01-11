@@ -1,0 +1,21 @@
+\doxysection{Utils.\+h}
+\hypertarget{_utils_8h_source}{}\label{_utils_8h_source}\index{Arkanoid/Utils.h@{Arkanoid/Utils.h}}
+\mbox{\hyperlink{_utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T1,\ \textcolor{keyword}{class}\ T2>}
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_utils_8h_ab11ab8517b09e802f3c68248b310baf9}{isIntersecting}}(T1\&\ A,\ T2\&\ B)}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{return}\ A.right()\ >=\ B.left()\ \&\&\ A.left()\ <=\ B.right()\ \&\&\ A.bottom()\ >=\ B.top()\ \&\&\ A.top()\ <=\ B.bottom();}
+\DoxyCodeLine{00018\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T1,\ \textcolor{keyword}{class}\ T2>}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_utils_8h_ab11ab8517b09e802f3c68248b310baf9}{isIntersecting}}(T1\&\ A,\ T2\&\ B,\ \textcolor{keywordtype}{float}\ offsetX,\ \textcolor{keywordtype}{float}\ offsetY)}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{return}\ A.right()\ +\ offsetX\ >=\ B.left()\ \&\&\ A.left()\ +\ offsetX\ <=\ B.right()\ \&\&\ A.bottom()\ +\ offsetY\ >=\ B.top()\ \&\&\ A.top()\ +\ offsetY\ <=\ B.bottom();}
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}

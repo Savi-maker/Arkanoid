@@ -1,0 +1,61 @@
+\doxysection{Paddle.\+h}
+\hypertarget{_paddle_8h_source}{}\label{_paddle_8h_source}\index{Arkanoid/Paddle.h@{Arkanoid/Paddle.h}}
+\mbox{\hyperlink{_paddle_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }sf;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_paddle_a04da494d13740299c03481c932199013}{Paddle}}\ :\ \textcolor{keyword}{public}\ Drawable}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_paddle_a04da494d13740299c03481c932199013}{Paddle}}(\textcolor{keywordtype}{float}\ t\_X,\ \textcolor{keywordtype}{float}\ t\_Y);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}{\string~Paddle}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_a840b626b2137bb9f754563d33693cfac}{update}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_a757d8913b856088398deb4ec9780a94b}{moveLeft}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_ad143c9de8342378c3153d7ed06bd3ca4}{moveRight}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_a63e52094b6c463cafe6260333d59ebd3}{setReverseControls}}(\textcolor{keywordtype}{bool}\ reverse);\ \textcolor{comment}{//\ Deklaracja\ metody\ setReverseControls}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_a8ea5fff3052f2f8e2275bf72ee965496}{left}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_af61d36c2aa66085731eba97f31640f86}{right}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_ac3704d938da3f50623db12493bc56fa6}{top}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_a9c19cce54630a444242f1c993516adbc}{bottom}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_paddle_af0bbc74e9d5c0e245fa75abee11641e3}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ Vector2f\ \mbox{\hyperlink{class_paddle_a129328c6ac3ffe8d8e34648c107d024a}{getVelocity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_ae0b980f31e309cbebb845067f8c830cb}{getWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_paddle_a6089d882922a3e905d4ec2a1be1b90de}{getHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_af4eea860e4c267644e5da8f7fe2446a6}{setSize}}(\textcolor{keyword}{const}\ Vector2f\&\ size);\ \textcolor{comment}{//\ Setter\ for\ shape\ size}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_a2acdc3dc0a8fd8d4b9c6e7acf593a26f}{setVelocity}}(\textcolor{keyword}{const}\ Vector2f\&\ newVelocity);\ \textcolor{comment}{//\ Setter\ for\ velocity}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paddle_a8086c5f5dc90749022cc3eb2ebdfe197}{draw}}(RenderTarget\&\ target,\ RenderStates\ state)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00116\ \ \ \ \ RectangleShape\ shape;\ }
+\DoxyCodeLine{00117\ \ \ \ \ Texture\ paddleTexture;\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ paddleWidth\{\ 80.0f\ \};\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ paddleHeight\{\ 20.0f\ \};\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ paddleVelocity\{\ 8.0f\ \};\ }
+\DoxyCodeLine{00121\ \ \ \ \ Vector2f\ velocity\{\ paddleVelocity,\ 0.f\ \};\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{bool}\ reverseControls\{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00123\ \}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ ;}
+
+\end{DoxyCode}

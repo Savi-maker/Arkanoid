@@ -1,0 +1,82 @@
+\doxysection{Arkanoid/\+Utils.h File Reference}
+\hypertarget{_utils_8h}{}\label{_utils_8h}\index{Arkanoid/Utils.h@{Arkanoid/Utils.h}}
+
+
+Plik zawiera funkcje pomocnicze do sprawdzania kolizji.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1, class T2$>$ }\\bool \mbox{\hyperlink{_utils_8h_ab11ab8517b09e802f3c68248b310baf9}{is\+Intersecting}} (T1 \&A, T2 \&B)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy dwa obiekty koliduj¹ ze sob¹. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T1, class T2$>$ }\\bool \mbox{\hyperlink{_utils_8h_a3f602ccd743ac04e75c7c90feb6873bf}{is\+Intersecting}} (T1 \&A, T2 \&B, float offsetX, float offsetY)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy dwa obiekty koliduj¹ ze sob¹ z uwzglêdnieniem przesuniêcia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Plik zawiera funkcje pomocnicze do sprawdzania kolizji. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_utils_8h_ab11ab8517b09e802f3c68248b310baf9}\index{Utils.h@{Utils.h}!isIntersecting@{isIntersecting}}
+\index{isIntersecting@{isIntersecting}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{isIntersecting()}{isIntersecting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_utils_8h_ab11ab8517b09e802f3c68248b310baf9} 
+template$<$class T1, class T2$>$ \\
+bool is\+Intersecting (\begin{DoxyParamCaption}\item[{T1 \&}]{A}{, }\item[{T2 \&}]{B}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza, czy dwa obiekty koliduj¹ ze sob¹. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Typ pierwszego obiektu. \\
+\hline
+{\em T2} & Typ drugiego obiektu. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em A} & Referencja do pierwszego obiektu. \\
+\hline
+{\em B} & Referencja do drugiego obiektu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, jeœli obiekty koliduj¹; w przeciwnym razie false. 
+\end{DoxyReturn}
+\Hypertarget{_utils_8h_a3f602ccd743ac04e75c7c90feb6873bf}\index{Utils.h@{Utils.h}!isIntersecting@{isIntersecting}}
+\index{isIntersecting@{isIntersecting}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{isIntersecting()}{isIntersecting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_utils_8h_a3f602ccd743ac04e75c7c90feb6873bf} 
+template$<$class T1, class T2$>$ \\
+bool is\+Intersecting (\begin{DoxyParamCaption}\item[{T1 \&}]{A}{, }\item[{T2 \&}]{B}{, }\item[{float}]{offsetX}{, }\item[{float}]{offsetY}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza, czy dwa obiekty koliduj¹ ze sob¹ z uwzglêdnieniem przesuniêcia. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Typ pierwszego obiektu. \\
+\hline
+{\em T2} & Typ drugiego obiektu. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em A} & Referencja do pierwszego obiektu. \\
+\hline
+{\em B} & Referencja do drugiego obiektu. \\
+\hline
+{\em offsetX} & Przesuniêcie w osi X. \\
+\hline
+{\em offsetY} & Przesuniêcie w osi Y. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, jeœli obiekty koliduj¹; w przeciwnym razie false. 
+\end{DoxyReturn}

@@ -1,0 +1,346 @@
+\doxysection{Paddle Class Reference}
+\hypertarget{class_paddle}{}\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+Klasa reprezentuj¹ca paletkê w grze.  
+
+
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+Inheritance diagram for Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paddle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paddle_a04da494d13740299c03481c932199013}{Paddle}} (float t\+\_\+X, float t\+\_\+Y)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_paddle}{Paddle}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}{\texorpdfstring{$\sim$}{\string~}\+Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_paddle}{Paddle}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a840b626b2137bb9f754563d33693cfac}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan paletki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a757d8913b856088398deb4ec9780a94b}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa paletkê w lewo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_ad143c9de8342378c3153d7ed06bd3ca4}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa paletkê w prawo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a63e52094b6c463cafe6260333d59ebd3}{set\+Reverse\+Controls}} (bool reverse)
+\begin{DoxyCompactList}\small\item\em Ustawia odwrócone sterowanie paletk¹. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_a8ea5fff3052f2f8e2275bf72ee965496}{left}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca lew¹ pozycjê paletki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_af61d36c2aa66085731eba97f31640f86}{right}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca praw¹ pozycjê paletki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_ac3704d938da3f50623db12493bc56fa6}{top}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca górn¹ pozycjê paletki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_a9c19cce54630a444242f1c993516adbc}{bottom}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca doln¹ pozycjê paletki. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_paddle_af0bbc74e9d5c0e245fa75abee11641e3}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca pozycjê paletki. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_paddle_a129328c6ac3ffe8d8e34648c107d024a}{get\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prêdkoœæ paletki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_ae0b980f31e309cbebb845067f8c830cb}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca szerokoœæ paletki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_paddle_a6089d882922a3e905d4ec2a1be1b90de}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wysokoœæ paletki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_af4eea860e4c267644e5da8f7fe2446a6}{set\+Size}} (const Vector2f \&size)
+\begin{DoxyCompactList}\small\item\em Ustawia nowy rozmiar paletki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a2acdc3dc0a8fd8d4b9c6e7acf593a26f}{set\+Velocity}} (const Vector2f \&new\+Velocity)
+\begin{DoxyCompactList}\small\item\em Ustawia now¹ prêdkoœæ paletki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a8086c5f5dc90749022cc3eb2ebdfe197}{draw}} (Render\+Target \&target, Render\+States state) const override
+\begin{DoxyCompactList}\small\item\em Rysuje paletkê na ekranie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca paletkê w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_paddle_a04da494d13740299c03481c932199013}\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily \label{class_paddle_a04da494d13740299c03481c932199013} 
+Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{float}]{t\+\_\+X}{, }\item[{float}]{t\+\_\+Y}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_paddle}{Paddle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+X} & Pozycja X paletki. \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y paletki.\\
+\hline
+{\em t\+\_\+X} & Pozycja X paletki \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y paletki \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}\index{Paddle@{Paddle}!````~Paddle@{\texorpdfstring{$\sim$}{\string~}Paddle}}
+\index{````~Paddle@{\texorpdfstring{$\sim$}{\string~}Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Paddle()}{\string~Paddle()}}
+{\footnotesize\ttfamily \label{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030} 
+Paddle\+::\texorpdfstring{$\sim$}{\string~}\+Paddle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_paddle}{Paddle}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_paddle_a9c19cce54630a444242f1c993516adbc}\index{Paddle@{Paddle}!bottom@{bottom}}
+\index{bottom@{bottom}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily \label{class_paddle_a9c19cce54630a444242f1c993516adbc} 
+float Paddle\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca doln¹ pozycjê paletki. 
+
+Metoda zwracajÄ…ca dolnÄ… krawÄ™dÅº paletki.
+
+\begin{DoxyReturn}{Returns}
+Dolna pozycja paletki.
+
+float Dolna krawÄ™dÅº paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a8086c5f5dc90749022cc3eb2ebdfe197}\index{Paddle@{Paddle}!draw@{draw}}
+\index{draw@{draw}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_paddle_a8086c5f5dc90749022cc3eb2ebdfe197} 
+void Paddle\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target}{, }\item[{Render\+States}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje paletkê na ekranie. 
+
+Metoda rysujÄ…ca paletkÄ™ na ekranie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Obiekt docelowy renderowania. \\
+\hline
+{\em state} & Stan renderowania.\\
+\hline
+{\em target} & Obiekt docelowy do rysowania \\
+\hline
+{\em state} & Stan renderowania \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_paddle_a6089d882922a3e905d4ec2a1be1b90de}\index{Paddle@{Paddle}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily \label{class_paddle_a6089d882922a3e905d4ec2a1be1b90de} 
+float Paddle\+::get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wysokoœæ paletki. 
+
+Metoda zwracajÄ…ca wysokoÅ›Ä‡ paletki.
+
+\begin{DoxyReturn}{Returns}
+Wysokoœæ paletki.
+
+float WysokoÅ›Ä‡ paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_af0bbc74e9d5c0e245fa75abee11641e3}\index{Paddle@{Paddle}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_paddle_af0bbc74e9d5c0e245fa75abee11641e3} 
+Vector2f Paddle\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca pozycjê paletki. 
+
+Metoda zwracajÄ…ca pozycjÄ™ paletki.
+
+\begin{DoxyReturn}{Returns}
+Pozycja paletki.
+
+Vector2f Pozycja paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a129328c6ac3ffe8d8e34648c107d024a}\index{Paddle@{Paddle}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily \label{class_paddle_a129328c6ac3ffe8d8e34648c107d024a} 
+Vector2f Paddle\+::get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prêdkoœæ paletki. 
+
+Metoda zwracajÄ…ca prÄ™dkoÅ›Ä‡ paletki.
+
+\begin{DoxyReturn}{Returns}
+Prêdkoœæ paletki.
+
+Vector2f PrÄ™dkoÅ›Ä‡ paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_ae0b980f31e309cbebb845067f8c830cb}\index{Paddle@{Paddle}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily \label{class_paddle_ae0b980f31e309cbebb845067f8c830cb} 
+float Paddle\+::get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca szerokoœæ paletki. 
+
+Metoda zwracajÄ…ca szerokoÅ›Ä‡ paletki.
+
+\begin{DoxyReturn}{Returns}
+Szerokoœæ paletki.
+
+float SzerokoÅ›Ä‡ paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a8ea5fff3052f2f8e2275bf72ee965496}\index{Paddle@{Paddle}!left@{left}}
+\index{left@{left}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \label{class_paddle_a8ea5fff3052f2f8e2275bf72ee965496} 
+float Paddle\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca lew¹ pozycjê paletki. 
+
+Metoda zwracajÄ…ca lewÄ… krawÄ™dÅº paletki.
+
+\begin{DoxyReturn}{Returns}
+Lewa pozycja paletki.
+
+float Lewa krawÄ™dÅº paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a757d8913b856088398deb4ec9780a94b}\index{Paddle@{Paddle}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_paddle_a757d8913b856088398deb4ec9780a94b} 
+void Paddle\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa paletkê w lewo. 
+
+Metoda przesuwajÄ…ca paletkÄ™ w lewo. \Hypertarget{class_paddle_ad143c9de8342378c3153d7ed06bd3ca4}\index{Paddle@{Paddle}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_paddle_ad143c9de8342378c3153d7ed06bd3ca4} 
+void Paddle\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa paletkê w prawo. 
+
+Metoda przesuwajÄ…ca paletkÄ™ w prawo. \Hypertarget{class_paddle_af61d36c2aa66085731eba97f31640f86}\index{Paddle@{Paddle}!right@{right}}
+\index{right@{right}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \label{class_paddle_af61d36c2aa66085731eba97f31640f86} 
+float Paddle\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca praw¹ pozycjê paletki. 
+
+Metoda zwracajÄ…ca prawÄ… krawÄ™dÅº paletki.
+
+\begin{DoxyReturn}{Returns}
+Prawa pozycja paletki.
+
+float Prawa krawÄ™dÅº paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a63e52094b6c463cafe6260333d59ebd3}\index{Paddle@{Paddle}!setReverseControls@{setReverseControls}}
+\index{setReverseControls@{setReverseControls}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{setReverseControls()}{setReverseControls()}}
+{\footnotesize\ttfamily \label{class_paddle_a63e52094b6c463cafe6260333d59ebd3} 
+void Paddle\+::set\+Reverse\+Controls (\begin{DoxyParamCaption}\item[{bool}]{reverse}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia odwrócone sterowanie paletk¹. 
+
+Metoda ustawiajÄ…ca odwrÃ³cone kontrolki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reverse} & Czy sterowanie ma byæ odwrócone.\\
+\hline
+{\em reverse} & Flaga okreÅ›lajÄ…ca, czy kontrolki majÄ… byÄ‡ odwrÃ³cone \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_paddle_af4eea860e4c267644e5da8f7fe2446a6}\index{Paddle@{Paddle}!setSize@{setSize}}
+\index{setSize@{setSize}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily \label{class_paddle_af4eea860e4c267644e5da8f7fe2446a6} 
+void Paddle\+::set\+Size (\begin{DoxyParamCaption}\item[{const Vector2f \&}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia nowy rozmiar paletki. 
+
+Metoda ustawiajÄ…ca rozmiar paletki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Nowy rozmiar paletki.\\
+\hline
+{\em size} & Nowy rozmiar paletki \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_paddle_a2acdc3dc0a8fd8d4b9c6e7acf593a26f}\index{Paddle@{Paddle}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily \label{class_paddle_a2acdc3dc0a8fd8d4b9c6e7acf593a26f} 
+void Paddle\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const Vector2f \&}]{new\+Velocity}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia now¹ prêdkoœæ paletki. 
+
+Metoda ustawiajÄ…ca prÄ™dkoÅ›Ä‡ paletki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Velocity} & Nowa prêdkoœæ paletki.\\
+\hline
+{\em new\+Velocity} & Nowa prÄ™dkoÅ›Ä‡ paletki \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_paddle_ac3704d938da3f50623db12493bc56fa6}\index{Paddle@{Paddle}!top@{top}}
+\index{top@{top}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{class_paddle_ac3704d938da3f50623db12493bc56fa6} 
+float Paddle\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca górn¹ pozycjê paletki. 
+
+Metoda zwracajÄ…ca gÃ³rnÄ… krawÄ™dÅº paletki.
+
+\begin{DoxyReturn}{Returns}
+Górna pozycja paletki.
+
+float GÃ³rna krawÄ™dÅº paletki 
+\end{DoxyReturn}
+\Hypertarget{class_paddle_a840b626b2137bb9f754563d33693cfac}\index{Paddle@{Paddle}!update@{update}}
+\index{update@{update}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_paddle_a840b626b2137bb9f754563d33693cfac} 
+void Paddle\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan paletki. 
+
+Metoda aktualizujÄ…ca stan paletki. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Arkanoid/\mbox{\hyperlink{_paddle_8h}{Paddle.\+h}}\item 
+Arkanoid/\mbox{\hyperlink{_paddle_8cpp}{Paddle.\+cpp}}\end{DoxyCompactItemize}

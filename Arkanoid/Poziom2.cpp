@@ -161,21 +161,21 @@ int Poziom2::Start()
     int numberOfBlocks = blocksX * blocksY * finalHp;
     int hp = 0;
 
-    while (hp < finalHp)
-    {
-        for (int i = 0; i < blocksY; i++)
+    
+        Texture blockTexture;
+        blockTexture.loadFromFile("Textury/platforma.png");
+
+        // Tworzenie bloków
+        for (unsigned i = 0; i < blocksY; i++)
         {
-            for (int j = 0; j < blocksX; j++)
+            for (unsigned j = 0; j < blocksX; j++)
             {
-                // Tworzenie bloku tylko na co drugim polu
-                if ((i + j) % 2 == 0)  // co drugie pole tworzy blok, reszta jest pusta
-                {
-                    blocks.emplace_back((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
-                }
+                Block block((j + 1) * (blockWidth + 50), (i + 1) * (blockHeight + 25), blockWidth, blockHeight);
+                block.getShape().setTexture(&blockTexture); // Użyj metody getShape
+                blocks.push_back(block);
             }
         }
-        hp++;
-    }
+       
 
     Texture Poziom2;
     Poziom2.loadFromFile("Textury/level2.png");
@@ -235,7 +235,7 @@ int Poziom2::Start()
                     Super.display();
                 }
             }
-            exit(1);
+           exit(1);
             return 0;
         }
 

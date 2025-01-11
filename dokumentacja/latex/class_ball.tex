@@ -1,0 +1,487 @@
+\doxysection{Ball Class Reference}
+\hypertarget{class_ball}{}\label{class_ball}\index{Ball@{Ball}}
+
+
+Klasa reprezentujÄ…ca piÅ‚kÄ™ w grze.  
+
+
+
+
+{\ttfamily \#include $<$ball.\+h$>$}
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_ab1915740b75f6ccf41d2251d6f499492}{Ball}} (float t\+\_\+X, float t\+\_\+Y)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_ball}{Ball}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ball_abeb601a3331873f25c7086cd4f83e9b4}{Ball}} ()=delete
+\begin{DoxyCompactList}\small\item\em UsuniÄ™ty konstruktor domyÅ›lny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ball_aacc0c1db85eb16e1ae9ad6daffd3c13e}{\texorpdfstring{$\sim$}{\string~}\+Ball}} ()=default
+\begin{DoxyCompactList}\small\item\em DomyÅ›lny destruktor klasy \doxylink{class_ball}{Ball}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_af30f4707d26a6e7ba0af1dd8cac37684}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan piÅ‚ki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a794dcba9bdcb13c1efc14ef97f185fe5}{update}} (const \mbox{\hyperlink{class_paddle}{Paddle}} \&paddle)
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan piÅ‚ki w zaleÅ¼noÅ›ci od pozycji paletki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_afb36e5574f9fe428048bb8b09506cb72}{move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w gÃ³rÄ™. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_adce7df33371cfa3752e124ae2b942ac4}{move\+Up\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w gÃ³rÄ™ i w lewo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_af506ba70a6e1c356525e7233d7f63b79}{move\+Up\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w gÃ³rÄ™ i w prawo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a097ca955e51c809a7b7486ec7f68bcd8}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w dÃ³Å‚. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a1c9b2070d13f77267761e3035767fedb}{move\+Down\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w dÃ³Å‚ i w lewo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a478adfabad202153d72ddb423272e923}{move\+Down\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w dÃ³Å‚ i w prawo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_aeac32b787711d2ce4baa41592e384bab}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w prawo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_ab50947921f203f92a3bfcf424247a47f}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Przesuwa piÅ‚kÄ™ w lewo. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_ball_a70e88464efdf5fcbffe8e5fbeb706076}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca pozycjÄ™ piÅ‚ki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_a823a3ef49154d3132816f626fbcc4c1a}{left}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca lewÄ… pozycjÄ™ piÅ‚ki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_abc41f7a60b5e5589c5d28e764e647408}{right}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prawÄ… pozycjÄ™ piÅ‚ki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_a5e83480c7ca1b72f144f0bf27f88878a}{top}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca gÃ³rnÄ… pozycjÄ™ piÅ‚ki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_acd5816f43a5ae6e1fe345596a39910a5}{bottom}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca dolnÄ… pozycjÄ™ piÅ‚ki. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_ball_a68663f04c2d092fa4dd3a2fddee79a44}{get\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca prÄ™dkoÅ›Ä‡ piÅ‚ki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a9b4ac3f1e7a76104005df37e954e3ff0}{set\+Velocity}} (const Vector2f \&new\+Velocity)
+\begin{DoxyCompactList}\small\item\em Ustawia nowÄ… prÄ™dkoÅ›Ä‡ piÅ‚ki. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_ac93d35a55e06ca1a406cf3cbc49f4e12}{get\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca promieÅ„ piÅ‚ki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a7f8d844948ccc5111ee4b60cdb3ed42f}{set\+Radius}} (float radius)
+\begin{DoxyCompactList}\small\item\em Ustawia nowy promieÅ„ piÅ‚ki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a8445dbb07dda6358b3b29e642e335820}{set\+Invisible}} (bool invisible)
+\begin{DoxyCompactList}\small\item\em Ustawia stan niewidzialnoÅ›ci piÅ‚ki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a9b1a362cb703628cb9a744b506f90ca2}{draw}} (Render\+Target \&target, Render\+States state) const override
+\begin{DoxyCompactList}\small\item\em Rysuje piÅ‚kÄ™ na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a07ea05fe7ec210196bd95fd186a285d7}{check\+Collision\+With\+Paddle}} (const \mbox{\hyperlink{class_paddle}{Paddle}} \&paddle)
+\begin{DoxyCompactList}\small\item\em Sprawdza kolizjÄ™ piÅ‚ki z paletkÄ…. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_ae5fe0d626dfc5c0b7fb06d4e9f3f45a6}{update\+Invisibility}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan niewidzialnoÅ›ci piÅ‚ki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{class_ball_a0361fc18a91dede32a2cb0c90a2cfb6d}{invisibility\+Clock}}
+\begin{DoxyCompactList}\small\item\em Zegar do Å›ledzenia czasu niewidzialnoÅ›ci. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ball_a8c216b45c93e9020617ee8f1bd3abd87}{invisibility\+Duration}} \{ 1.\+0f \}
+\begin{DoxyCompactList}\small\item\em Czas trwania niewidzialnoÅ›ci w sekundach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujÄ…ca piÅ‚kÄ™ w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ball_ab1915740b75f6ccf41d2251d6f499492}\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_ball_ab1915740b75f6ccf41d2251d6f499492} 
+Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{float}]{t\+\_\+X}{, }\item[{float}]{t\+\_\+Y}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_ball}{Ball}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+X} & Pozycja X piÅ‚ki. \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y piÅ‚ki.\\
+\hline
+{\em t\+\_\+X} & Pozycja X pi³ki. \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y pi³ki. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_abeb601a3331873f25c7086cd4f83e9b4}\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_ball_abeb601a3331873f25c7086cd4f83e9b4} 
+Ball\+::\+Ball (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+UsuniÄ™ty konstruktor domyÅ›lny. 
+
+\Hypertarget{class_ball_aacc0c1db85eb16e1ae9ad6daffd3c13e}\index{Ball@{Ball}!````~Ball@{\texorpdfstring{$\sim$}{\string~}Ball}}
+\index{````~Ball@{\texorpdfstring{$\sim$}{\string~}Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Ball()}{\string~Ball()}}
+{\footnotesize\ttfamily \label{class_ball_aacc0c1db85eb16e1ae9ad6daffd3c13e} 
+Ball\+::\texorpdfstring{$\sim$}{\string~}\+Ball (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+DomyÅ›lny destruktor klasy \doxylink{class_ball}{Ball}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ball_acd5816f43a5ae6e1fe345596a39910a5}\index{Ball@{Ball}!bottom@{bottom}}
+\index{bottom@{bottom}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily \label{class_ball_acd5816f43a5ae6e1fe345596a39910a5} 
+float Ball\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca dolnÄ… pozycjÄ™ piÅ‚ki. 
+
+Zwraca doln¹ pozycjê pi³ki.
+
+\begin{DoxyReturn}{Returns}
+Dolna pozycja piÅ‚ki.
+
+Dolna pozycja pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_a07ea05fe7ec210196bd95fd186a285d7}\index{Ball@{Ball}!checkCollisionWithPaddle@{checkCollisionWithPaddle}}
+\index{checkCollisionWithPaddle@{checkCollisionWithPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{checkCollisionWithPaddle()}{checkCollisionWithPaddle()}}
+{\footnotesize\ttfamily \label{class_ball_a07ea05fe7ec210196bd95fd186a285d7} 
+void Ball\+::check\+Collision\+With\+Paddle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza kolizjÄ™ piÅ‚ki z paletkÄ…. 
+
+Sprawdza kolizjê pi³ki z paletk¹.
+
+
+\begin{DoxyParams}{Parameters}
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_a9b1a362cb703628cb9a744b506f90ca2}\index{Ball@{Ball}!draw@{draw}}
+\index{draw@{draw}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_ball_a9b1a362cb703628cb9a744b506f90ca2} 
+void Ball\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target}{, }\item[{Render\+States}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje piÅ‚kÄ™ na ekranie. 
+
+Rysuje pi³kê na ekranie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Obiekt docelowy renderowania. \\
+\hline
+{\em state} & Stan renderowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_a70e88464efdf5fcbffe8e5fbeb706076}\index{Ball@{Ball}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_ball_a70e88464efdf5fcbffe8e5fbeb706076} 
+Vector2f Ball\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca pozycjÄ™ piÅ‚ki. 
+
+Zwraca pozycjê pi³ki.
+
+\begin{DoxyReturn}{Returns}
+Pozycja piÅ‚ki.
+
+Pozycja pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_ac93d35a55e06ca1a406cf3cbc49f4e12}\index{Ball@{Ball}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily \label{class_ball_ac93d35a55e06ca1a406cf3cbc49f4e12} 
+float Ball\+::get\+Radius (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca promieÅ„ piÅ‚ki. 
+
+Zwraca promieñ pi³ki.
+
+\begin{DoxyReturn}{Returns}
+PromieÅ„ piÅ‚ki.
+
+Promieñ pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_a68663f04c2d092fa4dd3a2fddee79a44}\index{Ball@{Ball}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily \label{class_ball_a68663f04c2d092fa4dd3a2fddee79a44} 
+Vector2f Ball\+::get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prÄ™dkoÅ›Ä‡ piÅ‚ki. 
+
+Zwraca prêdkoœæ pi³ki.
+
+\begin{DoxyReturn}{Returns}
+PrÄ™dkoÅ›Ä‡ piÅ‚ki.
+
+Prêdkoœæ pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_a823a3ef49154d3132816f626fbcc4c1a}\index{Ball@{Ball}!left@{left}}
+\index{left@{left}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \label{class_ball_a823a3ef49154d3132816f626fbcc4c1a} 
+float Ball\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca lewÄ… pozycjÄ™ piÅ‚ki. 
+
+Zwraca lew¹ pozycjê pi³ki.
+
+\begin{DoxyReturn}{Returns}
+Lewa pozycja piÅ‚ki.
+
+Lewa pozycja pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_a097ca955e51c809a7b7486ec7f68bcd8}\index{Ball@{Ball}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily \label{class_ball_a097ca955e51c809a7b7486ec7f68bcd8} 
+void Ball\+::move\+Down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w dÃ³Å‚. 
+
+Ustawia prêdkoœæ pi³ki w dó³. \Hypertarget{class_ball_a1c9b2070d13f77267761e3035767fedb}\index{Ball@{Ball}!moveDownLeft@{moveDownLeft}}
+\index{moveDownLeft@{moveDownLeft}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveDownLeft()}{moveDownLeft()}}
+{\footnotesize\ttfamily \label{class_ball_a1c9b2070d13f77267761e3035767fedb} 
+void Ball\+::move\+Down\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w dÃ³Å‚ i w lewo. 
+
+Ustawia prêdkoœæ pi³ki w dó³ i w lewo. \Hypertarget{class_ball_a478adfabad202153d72ddb423272e923}\index{Ball@{Ball}!moveDownRight@{moveDownRight}}
+\index{moveDownRight@{moveDownRight}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveDownRight()}{moveDownRight()}}
+{\footnotesize\ttfamily \label{class_ball_a478adfabad202153d72ddb423272e923} 
+void Ball\+::move\+Down\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w dÃ³Å‚ i w prawo. 
+
+Ustawia prêdkoœæ pi³ki w dó³ i w prawo. \Hypertarget{class_ball_ab50947921f203f92a3bfcf424247a47f}\index{Ball@{Ball}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily \label{class_ball_ab50947921f203f92a3bfcf424247a47f} 
+void Ball\+::move\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w lewo. 
+
+Ustawia prêdkoœæ pi³ki w lewo. \Hypertarget{class_ball_aeac32b787711d2ce4baa41592e384bab}\index{Ball@{Ball}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily \label{class_ball_aeac32b787711d2ce4baa41592e384bab} 
+void Ball\+::move\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w prawo. 
+
+Ustawia prêdkoœæ pi³ki w prawo. \Hypertarget{class_ball_afb36e5574f9fe428048bb8b09506cb72}\index{Ball@{Ball}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveUp()}{moveUp()}}
+{\footnotesize\ttfamily \label{class_ball_afb36e5574f9fe428048bb8b09506cb72} 
+void Ball\+::move\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w gÃ³rÄ™. 
+
+Ustawia prêdkoœæ pi³ki w górê. \Hypertarget{class_ball_adce7df33371cfa3752e124ae2b942ac4}\index{Ball@{Ball}!moveUpLeft@{moveUpLeft}}
+\index{moveUpLeft@{moveUpLeft}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveUpLeft()}{moveUpLeft()}}
+{\footnotesize\ttfamily \label{class_ball_adce7df33371cfa3752e124ae2b942ac4} 
+void Ball\+::move\+Up\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w gÃ³rÄ™ i w lewo. 
+
+Ustawia prêdkoœæ pi³ki w górê i w lewo. \Hypertarget{class_ball_af506ba70a6e1c356525e7233d7f63b79}\index{Ball@{Ball}!moveUpRight@{moveUpRight}}
+\index{moveUpRight@{moveUpRight}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{moveUpRight()}{moveUpRight()}}
+{\footnotesize\ttfamily \label{class_ball_af506ba70a6e1c356525e7233d7f63b79} 
+void Ball\+::move\+Up\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przesuwa piÅ‚kÄ™ w gÃ³rÄ™ i w prawo. 
+
+Ustawia prêdkoœæ pi³ki w górê i w prawo. \Hypertarget{class_ball_abc41f7a60b5e5589c5d28e764e647408}\index{Ball@{Ball}!right@{right}}
+\index{right@{right}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \label{class_ball_abc41f7a60b5e5589c5d28e764e647408} 
+float Ball\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca prawÄ… pozycjÄ™ piÅ‚ki. 
+
+Zwraca praw¹ pozycjê pi³ki.
+
+\begin{DoxyReturn}{Returns}
+Prawa pozycja piÅ‚ki.
+
+Prawa pozycja pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_a8445dbb07dda6358b3b29e642e335820}\index{Ball@{Ball}!setInvisible@{setInvisible}}
+\index{setInvisible@{setInvisible}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setInvisible()}{setInvisible()}}
+{\footnotesize\ttfamily \label{class_ball_a8445dbb07dda6358b3b29e642e335820} 
+void Ball\+::set\+Invisible (\begin{DoxyParamCaption}\item[{bool}]{invisible}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia stan niewidzialnoÅ›ci piÅ‚ki. 
+
+Ustawia stan niewidzialnoœci pi³ki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em invisible} & Flaga niewidzialnoÅ›ci.\\
+\hline
+{\em invisible} & Czy pi³ka ma byæ niewidzialna. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_a7f8d844948ccc5111ee4b60cdb3ed42f}\index{Ball@{Ball}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily \label{class_ball_a7f8d844948ccc5111ee4b60cdb3ed42f} 
+void Ball\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{radius}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia nowy promieÅ„ piÅ‚ki. 
+
+Ustawia nowy promieñ pi³ki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & Nowy promieÅ„ piÅ‚ki.\\
+\hline
+{\em radius} & Nowy promieñ pi³ki. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_a9b4ac3f1e7a76104005df37e954e3ff0}\index{Ball@{Ball}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily \label{class_ball_a9b4ac3f1e7a76104005df37e954e3ff0} 
+void Ball\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const Vector2f \&}]{new\+Velocity}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia nowÄ… prÄ™dkoÅ›Ä‡ piÅ‚ki. 
+
+Ustawia now¹ prêdkoœæ pi³ki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Velocity} & Nowa prÄ™dkoÅ›Ä‡ piÅ‚ki.\\
+\hline
+{\em new\+Velocity} & Nowa prêdkoœæ pi³ki. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_a5e83480c7ca1b72f144f0bf27f88878a}\index{Ball@{Ball}!top@{top}}
+\index{top@{top}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{class_ball_a5e83480c7ca1b72f144f0bf27f88878a} 
+float Ball\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca gÃ³rnÄ… pozycjÄ™ piÅ‚ki. 
+
+Zwraca górn¹ pozycjê pi³ki.
+
+\begin{DoxyReturn}{Returns}
+GÃ³rna pozycja piÅ‚ki.
+
+Górna pozycja pi³ki. 
+\end{DoxyReturn}
+\Hypertarget{class_ball_af30f4707d26a6e7ba0af1dd8cac37684}\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_ball_af30f4707d26a6e7ba0af1dd8cac37684} 
+void Ball\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan piÅ‚ki. 
+
+Aktualizuje stan pi³ki. \Hypertarget{class_ball_a794dcba9bdcb13c1efc14ef97f185fe5}\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_ball_a794dcba9bdcb13c1efc14ef97f185fe5} 
+void Ball\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan piÅ‚ki w zaleÅ¼noÅ›ci od pozycji paletki. 
+
+Aktualizuje stan pi³ki z uwzglêdnieniem paletki.
+
+
+\begin{DoxyParams}{Parameters}
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ball_ae5fe0d626dfc5c0b7fb06d4e9f3f45a6}\index{Ball@{Ball}!updateInvisibility@{updateInvisibility}}
+\index{updateInvisibility@{updateInvisibility}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{updateInvisibility()}{updateInvisibility()}}
+{\footnotesize\ttfamily \label{class_ball_ae5fe0d626dfc5c0b7fb06d4e9f3f45a6} 
+void Ball\+::update\+Invisibility (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan niewidzialnoÅ›ci piÅ‚ki. 
+
+Aktualizuje stan niewidzialnoœci pi³ki. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ball_a0361fc18a91dede32a2cb0c90a2cfb6d}\index{Ball@{Ball}!invisibilityClock@{invisibilityClock}}
+\index{invisibilityClock@{invisibilityClock}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{invisibilityClock}{invisibilityClock}}
+{\footnotesize\ttfamily \label{class_ball_a0361fc18a91dede32a2cb0c90a2cfb6d} 
+sf\+::\+Clock Ball\+::invisibility\+Clock}
+
+
+
+Zegar do Å›ledzenia czasu niewidzialnoÅ›ci. 
+
+\Hypertarget{class_ball_a8c216b45c93e9020617ee8f1bd3abd87}\index{Ball@{Ball}!invisibilityDuration@{invisibilityDuration}}
+\index{invisibilityDuration@{invisibilityDuration}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{invisibilityDuration}{invisibilityDuration}}
+{\footnotesize\ttfamily \label{class_ball_a8c216b45c93e9020617ee8f1bd3abd87} 
+float Ball\+::invisibility\+Duration \{ 1.\+0f \}}
+
+
+
+Czas trwania niewidzialnoÅ›ci w sekundach. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Arkanoid/\mbox{\hyperlink{ball_8h}{ball.\+h}}\item 
+Arkanoid/\mbox{\hyperlink{ball_8cpp}{ball.\+cpp}}\end{DoxyCompactItemize}

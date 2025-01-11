@@ -1,0 +1,351 @@
+\doxysection{Buff Class Reference}
+\hypertarget{class_buff}{}\label{class_buff}\index{Buff@{Buff}}
+
+
+Klasa reprezentuj¹ca buff w grze.  
+
+
+
+
+{\ttfamily \#include $<$Buff.\+h$>$}
+
+Inheritance diagram for Buff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_buff}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_buff_a3f6d21319373cfbff38ccab91cddc84e}{Buff}} (float t\+\_\+X, float t\+\_\+Y, \mbox{\hyperlink{_buff_8h_af2698b3717f3617f4450dcd130fd3529}{Buff\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_buff}{Buff}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_buff_aced615c356d70720f4e48bb4fa282068}{Buff}} (const \mbox{\hyperlink{class_buff}{Buff}} \&other)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiuj¹cy klasy \doxylink{class_buff}{Buff}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_buff}{Buff}} \& \mbox{\hyperlink{class_buff_aea1d945019a79aff0e90cadc1b3529e2}{operator=}} (const \mbox{\hyperlink{class_buff}{Buff}} \&other)
+\begin{DoxyCompactList}\small\item\em Operator przypisania dla klasy \doxylink{class_buff}{Buff}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_a9ce2f0ea85fa26ae1f0689af0bfb972f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan buffa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_buff_8h_af2698b3717f3617f4450dcd130fd3529}{Buff\+Type}} \mbox{\hyperlink{class_buff_a42fcc80f65cb698315a41fe383d00f52}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca typ buffa. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_buff_af766217ac14ed2fd2f5a8b80d57f3ae6}{left}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca lew¹ pozycjê buffa. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_buff_abf7c917bd448aa368d75d073503f3db3}{right}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca praw¹ pozycjê buffa. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_buff_a098f320e96059ce20a4cfdbcf6d8a195}{top}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca górn¹ pozycjê buffa. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_buff_a6c776af10f3284dee66fa2f1d3a9c404}{bottom}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca doln¹ pozycjê buffa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_a8b4679a61a8bed9a7ec015f6a0968697}{fall}} ()
+\begin{DoxyCompactList}\small\item\em Powoduje opadanie buffa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_af93e7a2b9336e72e423c18a1c53c70c5}{activate}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball, bool \&reverse\+Controls, float \&paddle\+Speed\+Multiplier, float \&score\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Aktywuje efekt buffa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_a396ac635b52e27f5c1452bdad9885270}{deactivate}} ()
+\begin{DoxyCompactList}\small\item\em Dezaktywuje efekt buffa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_buff_a123a908ce77c8185f0b397bd216e817c}{is\+Effect\+Active}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy efekt buffa jest aktywny. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_buff_aaf953b3839cbabb8c0996e31e4b60f2e}{is\+Effect\+Ended}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy efekt buffa siê zakoñczy³. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_aa6eb871d1a1442256cc9b6d9a66ec8a8}{reset\+Effect}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball, bool \&reverse\+Controls, float \&paddle\+Speed\+Multiplier, float \&score\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Resetuje efekt buffa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_a22673ab2a49cb9c7b68331ce2bcd6897}{update\+Effect}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje efekt buffa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buff_a32537ed93528bd71e3828ab200b0cdde}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States state) const override
+\begin{DoxyCompactList}\small\item\em Rysuje buff na ekranie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca buff w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_buff_a3f6d21319373cfbff38ccab91cddc84e}\index{Buff@{Buff}!Buff@{Buff}}
+\index{Buff@{Buff}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{Buff()}{Buff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_buff_a3f6d21319373cfbff38ccab91cddc84e} 
+Buff\+::\+Buff (\begin{DoxyParamCaption}\item[{float}]{t\+\_\+X}{, }\item[{float}]{t\+\_\+Y}{, }\item[{\mbox{\hyperlink{_buff_8h_af2698b3717f3617f4450dcd130fd3529}{Buff\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_buff}{Buff}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+X} & Pozycja X buffa. \\
+\hline
+{\em t\+\_\+Y} & Pozycja Y buffa. \\
+\hline
+{\em type} & Typ buffa. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_buff_aced615c356d70720f4e48bb4fa282068}\index{Buff@{Buff}!Buff@{Buff}}
+\index{Buff@{Buff}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{Buff()}{Buff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_buff_aced615c356d70720f4e48bb4fa282068} 
+Buff\+::\+Buff (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_buff}{Buff}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiuj¹cy klasy \doxylink{class_buff}{Buff}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Inny obiekt klasy \doxylink{class_buff}{Buff}.\\
+\hline
+{\em other} & Obiekt klasy \doxylink{class_buff}{Buff}, z którego kopiowane s¹ dane. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_buff_af93e7a2b9336e72e423c18a1c53c70c5}\index{Buff@{Buff}!activate@{activate}}
+\index{activate@{activate}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily \label{class_buff_af93e7a2b9336e72e423c18a1c53c70c5} 
+void Buff\+::activate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{, }\item[{bool \&}]{reverse\+Controls}{, }\item[{float \&}]{paddle\+Speed\+Multiplier}{, }\item[{float \&}]{score\+Multiplier}{}\end{DoxyParamCaption})}
+
+
+
+Aktywuje efekt buffa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+{\em ball} & Referencja do obiektu \doxylink{class_ball}{Ball}. \\
+\hline
+{\em reverse\+Controls} & Flaga odwrócenia sterowania. \\
+\hline
+{\em paddle\+Speed\+Multiplier} & Mno¿nik prêdkoœci paletki. \\
+\hline
+{\em score\+Multiplier} & Mno¿nik punktów.\\
+\hline
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+{\em ball} & Referencja do obiektu \doxylink{class_ball}{Ball}. \\
+\hline
+{\em reverse\+Controls} & Referencja do flagi odwróconych sterowañ. \\
+\hline
+{\em paddle\+Speed\+Multiplier} & Referencja do mno¿nika prêdkoœci paletki. \\
+\hline
+{\em score\+Multiplier} & Referencja do mno¿nika punktów. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_buff_a6c776af10f3284dee66fa2f1d3a9c404}\index{Buff@{Buff}!bottom@{bottom}}
+\index{bottom@{bottom}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily \label{class_buff_a6c776af10f3284dee66fa2f1d3a9c404} 
+float Buff\+::bottom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca doln¹ pozycjê buffa. 
+
+\begin{DoxyReturn}{Returns}
+Dolna pozycja buffa. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_a396ac635b52e27f5c1452bdad9885270}\index{Buff@{Buff}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily \label{class_buff_a396ac635b52e27f5c1452bdad9885270} 
+void Buff\+::deactivate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Dezaktywuje efekt buffa. 
+
+\Hypertarget{class_buff_a32537ed93528bd71e3828ab200b0cdde}\index{Buff@{Buff}!draw@{draw}}
+\index{draw@{draw}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_buff_a32537ed93528bd71e3828ab200b0cdde} 
+void Buff\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target}{, }\item[{sf\+::\+Render\+States}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Rysuje buff na ekranie. 
+
+Rysuje buffa na ekranie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Obiekt docelowy renderowania. \\
+\hline
+{\em state} & Stan renderowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_buff_a8b4679a61a8bed9a7ec015f6a0968697}\index{Buff@{Buff}!fall@{fall}}
+\index{fall@{fall}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{fall()}{fall()}}
+{\footnotesize\ttfamily \label{class_buff_a8b4679a61a8bed9a7ec015f6a0968697} 
+void Buff\+::fall (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Powoduje opadanie buffa. 
+
+\Hypertarget{class_buff_a42fcc80f65cb698315a41fe383d00f52}\index{Buff@{Buff}!getType@{getType}}
+\index{getType@{getType}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_buff_a42fcc80f65cb698315a41fe383d00f52} 
+\mbox{\hyperlink{_buff_8h_af2698b3717f3617f4450dcd130fd3529}{Buff\+Type}} Buff\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca typ buffa. 
+
+\begin{DoxyReturn}{Returns}
+Typ buffa. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_a123a908ce77c8185f0b397bd216e817c}\index{Buff@{Buff}!isEffectActive@{isEffectActive}}
+\index{isEffectActive@{isEffectActive}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{isEffectActive()}{isEffectActive()}}
+{\footnotesize\ttfamily \label{class_buff_a123a908ce77c8185f0b397bd216e817c} 
+bool Buff\+::is\+Effect\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy efekt buffa jest aktywny. 
+
+\begin{DoxyReturn}{Returns}
+true, jeœli efekt jest aktywny; w przeciwnym razie false.
+
+True, jeœli efekt buffa jest aktywny, w przeciwnym razie false. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_aaf953b3839cbabb8c0996e31e4b60f2e}\index{Buff@{Buff}!isEffectEnded@{isEffectEnded}}
+\index{isEffectEnded@{isEffectEnded}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{isEffectEnded()}{isEffectEnded()}}
+{\footnotesize\ttfamily \label{class_buff_aaf953b3839cbabb8c0996e31e4b60f2e} 
+bool Buff\+::is\+Effect\+Ended (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy efekt buffa siê zakoñczy³. 
+
+\begin{DoxyReturn}{Returns}
+true, jeœli efekt siê zakoñczy³; w przeciwnym razie false.
+
+True, jeœli efekt buffa siê zakoñczy³, w przeciwnym razie false. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_af766217ac14ed2fd2f5a8b80d57f3ae6}\index{Buff@{Buff}!left@{left}}
+\index{left@{left}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \label{class_buff_af766217ac14ed2fd2f5a8b80d57f3ae6} 
+float Buff\+::left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca lew¹ pozycjê buffa. 
+
+\begin{DoxyReturn}{Returns}
+Lewa pozycja buffa. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_aea1d945019a79aff0e90cadc1b3529e2}\index{Buff@{Buff}!operator=@{operator=}}
+\index{operator=@{operator=}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_buff_aea1d945019a79aff0e90cadc1b3529e2} 
+\mbox{\hyperlink{class_buff}{Buff}} \& Buff\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_buff}{Buff}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Operator przypisania dla klasy \doxylink{class_buff}{Buff}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Inny obiekt klasy \doxylink{class_buff}{Buff}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do bie¿¹cego obiektu.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Obiekt klasy \doxylink{class_buff}{Buff}, z którego kopiowane s¹ dane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do bie¿¹cego obiektu \doxylink{class_buff}{Buff}. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_aa6eb871d1a1442256cc9b6d9a66ec8a8}\index{Buff@{Buff}!resetEffect@{resetEffect}}
+\index{resetEffect@{resetEffect}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{resetEffect()}{resetEffect()}}
+{\footnotesize\ttfamily \label{class_buff_aa6eb871d1a1442256cc9b6d9a66ec8a8} 
+void Buff\+::reset\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{, }\item[{bool \&}]{reverse\+Controls}{, }\item[{float \&}]{paddle\+Speed\+Multiplier}{, }\item[{float \&}]{score\+Multiplier}{}\end{DoxyParamCaption})}
+
+
+
+Resetuje efekt buffa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+{\em ball} & Referencja do obiektu \doxylink{class_ball}{Ball}. \\
+\hline
+{\em reverse\+Controls} & Flaga odwrócenia sterowania. \\
+\hline
+{\em paddle\+Speed\+Multiplier} & Mno¿nik prêdkoœci paletki. \\
+\hline
+{\em score\+Multiplier} & Mno¿nik punktów.\\
+\hline
+{\em paddle} & Referencja do obiektu \doxylink{class_paddle}{Paddle}. \\
+\hline
+{\em ball} & Referencja do obiektu \doxylink{class_ball}{Ball}. \\
+\hline
+{\em reverse\+Controls} & Referencja do flagi odwróconych sterowañ. \\
+\hline
+{\em paddle\+Speed\+Multiplier} & Referencja do mno¿nika prêdkoœci paletki. \\
+\hline
+{\em score\+Multiplier} & Referencja do mno¿nika punktów. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_buff_abf7c917bd448aa368d75d073503f3db3}\index{Buff@{Buff}!right@{right}}
+\index{right@{right}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \label{class_buff_abf7c917bd448aa368d75d073503f3db3} 
+float Buff\+::right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca praw¹ pozycjê buffa. 
+
+\begin{DoxyReturn}{Returns}
+Prawa pozycja buffa. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_a098f320e96059ce20a4cfdbcf6d8a195}\index{Buff@{Buff}!top@{top}}
+\index{top@{top}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{class_buff_a098f320e96059ce20a4cfdbcf6d8a195} 
+float Buff\+::top (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca górn¹ pozycjê buffa. 
+
+\begin{DoxyReturn}{Returns}
+Górna pozycja buffa. 
+\end{DoxyReturn}
+\Hypertarget{class_buff_a9ce2f0ea85fa26ae1f0689af0bfb972f}\index{Buff@{Buff}!update@{update}}
+\index{update@{update}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_buff_a9ce2f0ea85fa26ae1f0689af0bfb972f} 
+void Buff\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan buffa. 
+
+\Hypertarget{class_buff_a22673ab2a49cb9c7b68331ce2bcd6897}\index{Buff@{Buff}!updateEffect@{updateEffect}}
+\index{updateEffect@{updateEffect}!Buff@{Buff}}
+\doxysubsubsection{\texorpdfstring{updateEffect()}{updateEffect()}}
+{\footnotesize\ttfamily \label{class_buff_a22673ab2a49cb9c7b68331ce2bcd6897} 
+void Buff\+::update\+Effect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje efekt buffa. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Arkanoid/\mbox{\hyperlink{_buff_8h}{Buff.\+h}}\item 
+Arkanoid/\mbox{\hyperlink{_buff_8cpp}{Buff.\+cpp}}\end{DoxyCompactItemize}

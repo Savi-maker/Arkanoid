@@ -1,47 +1,65 @@
-///MainMenu.h
+/// @file MainMenu.h
+/// @brief Plik nag³ówkowy zawieraj¹cy deklaracjê klasy MainMenu.
+
 /**
-* Plik naglowkowy zawierajacy klasy, konstruktory, desruktory, definicje oraz dyrektwy.
-*/
+ * @brief Plik nag³ówkowy zawieraj¹cy klasy, konstruktory, destruktory, definicje oraz dyrektywy.
+ */
 #pragma once       
 #include <SFML/Graphics.hpp>
 
 using namespace std;
 using namespace sf;
-///Max_mian_menu
-/**
-* @def < defonicja maksymalnego rozmiaru menu jako 4>;
-*/
-#define Max_main_menu 5  ///deninujemy max rozmiar menu jako 4 ;
 
-///MainMenu
+/// @def Max_main_menu
+/// @brief Definicja maksymalnego rozmiaru menu jako 5.
+#define Max_main_menu 5
+
 /**
-*@class <MainMenu> < klasa menu >
-* Klasa zawiera:
- *konstruktor z dwoma parametrami ;
- *dodawnia destruktora
- *funkcje "draw" rysujaca okno;
- *funkcje "MoveUp","MoveDown" porusznia sie w gore i w dol;
- *funkje zwracajaca opcje ktora rostala wybrana;
- *styl trzciaki;
- *przypisanie rozmiaru menu
-*/
+ * @brief Klasa reprezentuj¹ca menu g³ówne.
+ */
 class MainMenu
 {
 public:
-	MainMenu(float width, float height);
+    /**
+     * @brief Konstruktor klasy MainMenu.
+     * @param width Szerokoœæ okna.
+     * @param height Wysokoœæ okna.
+     */
+    MainMenu(float width, float height);
 
-	void draw(RenderWindow& window);
-	void MoveUp();
-	void MoveDown();
+    /**
+     * @brief Rysuje menu na ekranie.
+     * @param window Okno renderowania.
+     */
+    void draw(RenderWindow& window);
 
-	int MainMenuPressed()
-	{
-		return MainMenuSelected;
-	}
-	~MainMenu();
+    /**
+     * @brief Przesuwa zaznaczenie w menu w górê.
+     */
+    void MoveUp();
+
+    /**
+     * @brief Przesuwa zaznaczenie w menu w dó³.
+     */
+    void MoveDown();
+
+    /**
+     * @brief Zwraca indeks wybranej opcji menu.
+     * @return Indeks wybranej opcji menu.
+     */
+    int MainMenuPressed()
+    {
+        return MainMenuSelected;
+    }
+
+    /**
+     * @brief Destruktor klasy MainMenu.
+     */
+    ~MainMenu();
 
 private:
-	int MainMenuSelected;
-	Font font; 
-	Text mainMenu[Max_main_menu];
-};
+    int MainMenuSelected; ///< Indeks wybranej opcji menu
+    Font font; ///< Czcionka u¿ywana w menu
+    Text mainMenu[Max_main_menu]; ///< Tablica opcji menu
+}
+;

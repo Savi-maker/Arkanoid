@@ -1,0 +1,374 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\OknoMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\OknoMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Block.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Paddle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Buff.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Buff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Paddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F62EE0E-1391-4036-94E2-BAF10FD355EE}|Arkanoid\\Arkanoid.vcxproj|solutionrelative:Arkanoid\\Poziom6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OknoMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\OknoMenu.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\OknoMenu.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\OknoMenu.cpp",
+              "RelativeToolTip": "Arkanoid\\OknoMenu.cpp",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAM4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-08T09:11:44.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Poziom1.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom1.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.h",
+              "RelativeToolTip": "Arkanoid\\Poziom1.h",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-08T11:53:15.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Block.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Block.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.cpp",
+              "RelativeToolTip": "Arkanoid\\Block.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAH4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T09:57:14.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Poziom5.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom5.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom5.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom5.cpp",
+              "RelativeToolTip": "Arkanoid\\Poziom5.cpp",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T10:00:22.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Poziom1.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom1.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom1.cpp",
+              "RelativeToolTip": "Arkanoid\\Poziom1.cpp",
+              "ViewState": "AgIAANEAAAAAAAAAAAASwOkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-08T11:53:20.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Poziom2.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom2.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.cpp*",
+              "RelativeToolTip": "Arkanoid\\Poziom2.cpp*",
+              "ViewState": "AgIAAN4AAAAAAAAAAAASwO0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-08T11:53:19.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Poziom3.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom3.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom3.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom3.cpp",
+              "RelativeToolTip": "Arkanoid\\Poziom3.cpp",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAAAOMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T09:58:29.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\MainMenu.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.cpp",
+              "RelativeToolTip": "Arkanoid\\MainMenu.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-08T09:11:42.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ball.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\ball.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.cpp",
+              "RelativeToolTip": "Arkanoid\\ball.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T10:05:06.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Buff.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Buff.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.h",
+              "RelativeToolTip": "Arkanoid\\Buff.h",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAiwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-08T11:51:04.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainMenu.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.h",
+              "RelativeDocumentMoniker": "Arkanoid\\MainMenu.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\MainMenu.h",
+              "RelativeToolTip": "Arkanoid\\MainMenu.h",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-08T09:11:48.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Paddle.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Paddle.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.h",
+              "RelativeToolTip": "Arkanoid\\Paddle.h",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T09:20:39.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Poziom2.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom2.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom2.h",
+              "RelativeToolTip": "Arkanoid\\Poziom2.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T10:07:10.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Poziom6.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom6.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.h",
+              "RelativeToolTip": "Arkanoid\\Poziom6.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T10:07:05.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Utils.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Utils.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Utils.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Utils.h",
+              "RelativeToolTip": "Arkanoid\\Utils.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T10:05:59.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Block.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.h",
+              "RelativeDocumentMoniker": "Arkanoid\\Block.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Block.h",
+              "RelativeToolTip": "Arkanoid\\Block.h",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAiwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T09:37:13.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ball.h",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.h",
+              "RelativeDocumentMoniker": "Arkanoid\\ball.h",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\ball.h",
+              "RelativeToolTip": "Arkanoid\\ball.h",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAuwKcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-11T10:14:23.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Buff.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Buff.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Buff.cpp",
+              "RelativeToolTip": "Arkanoid\\Buff.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T10:04:18.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Paddle.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Paddle.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Paddle.cpp",
+              "RelativeToolTip": "Arkanoid\\Paddle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T09:20:28.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Poziom4.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom4.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom4.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom4.cpp",
+              "RelativeToolTip": "Arkanoid\\Poziom4.cpp",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAK4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T10:00:13.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Poziom6.cpp",
+              "DocumentMoniker": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.cpp",
+              "RelativeDocumentMoniker": "Arkanoid\\Poziom6.cpp",
+              "ToolTip": "C:\\Users\\schod\\OneDrive\\Pulpit\\Arkanoid\\Arkanoid\\Poziom6.cpp",
+              "RelativeToolTip": "Arkanoid\\Poziom6.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-11T10:00:37.337Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

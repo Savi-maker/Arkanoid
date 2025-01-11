@@ -1,0 +1,69 @@
+\doxysection{Arkanoid/\+Poziom5.cpp File Reference}
+\hypertarget{_poziom5_8cpp}{}\label{_poziom5_8cpp}\index{Arkanoid/Poziom5.cpp@{Arkanoid/Poziom5.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$SFML/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include "{}Ball.\+h"{}}\newline
+{\ttfamily \#include "{}Paddle.\+h"{}}\newline
+{\ttfamily \#include "{}Block.\+h"{}}\newline
+{\ttfamily \#include "{}Main\+Menu.\+h"{}}\newline
+{\ttfamily \#include "{}Poziom5.\+h"{}}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$SFML/\+Audio.\+hpp$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1, class T2$>$ }\\bool \mbox{\hyperlink{_poziom5_8cpp_af884b88b5b62a2c0e835465902403033}{is\+Intersecting5}} (T1 \&A, T2 \&B)
+\begin{DoxyCompactList}\small\item\em Szablon klasy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom5_8cpp_aeeb8d8cde5723cbd67e57a05497e138f}{collision\+Test5}} (\mbox{\hyperlink{class_paddle}{Paddle}} \&paddle, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test5 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom5_8cpp_a4821dbc84b22b90bee6d2c931e6dfcf7}{collision\+Test5}} (\mbox{\hyperlink{class_block}{Block}} \&block, \mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em collision\+Test5 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_poziom5_8cpp_a48427f0a2a6dda922042e369959a9858}{is\+Game\+Over5}} (\mbox{\hyperlink{class_ball}{Ball}} \&ball)
+\begin{DoxyCompactList}\small\item\em is\+Game\+Over5 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_poziom5_8cpp_a4821dbc84b22b90bee6d2c931e6dfcf7}\index{Poziom5.cpp@{Poziom5.cpp}!collisionTest5@{collisionTest5}}
+\index{collisionTest5@{collisionTest5}!Poziom5.cpp@{Poziom5.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest5()}{collisionTest5()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_poziom5_8cpp_a4821dbc84b22b90bee6d2c931e6dfcf7} 
+bool collision\+Test5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}} \&}]{block}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test5 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje bloku i pileczki Sprawdza czy oba obiekty na siebie nachodza Przy odpowiednim warunku zniszcz blok Zmienne float z dwoma metodami klasy Instrukcja warunkowa, sprawdza w jaki sposob powinna odbic sie pilka \Hypertarget{_poziom5_8cpp_aeeb8d8cde5723cbd67e57a05497e138f}\index{Poziom5.cpp@{Poziom5.cpp}!collisionTest5@{collisionTest5}}
+\index{collisionTest5@{collisionTest5}!Poziom5.cpp@{Poziom5.cpp}}
+\doxysubsubsection{\texorpdfstring{collisionTest5()}{collisionTest5()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_poziom5_8cpp_aeeb8d8cde5723cbd67e57a05497e138f} 
+bool collision\+Test5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paddle}{Paddle}} \&}]{paddle}{, }\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+collision\+Test5 
+
+Funckja z dwoma parametrami sprawdzajaca kolizje paletki i pileczki Sprawdza czy oba obiekty na siebie nachodza Zabawa grawitacja, losujemy w jaki sposob ma sie odbic pileczka od paletki \Hypertarget{_poziom5_8cpp_a48427f0a2a6dda922042e369959a9858}\index{Poziom5.cpp@{Poziom5.cpp}!isGameOver5@{isGameOver5}}
+\index{isGameOver5@{isGameOver5}!Poziom5.cpp@{Poziom5.cpp}}
+\doxysubsubsection{\texorpdfstring{isGameOver5()}{isGameOver5()}}
+{\footnotesize\ttfamily \label{_poziom5_8cpp_a48427f0a2a6dda922042e369959a9858} 
+bool is\+Game\+Over5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ball}{Ball}} \&}]{ball}{}\end{DoxyParamCaption})}
+
+
+
+is\+Game\+Over5 
+
+Instrukcja warunkowa, sprawdza czy pilka spadla na dol planszy \Hypertarget{_poziom5_8cpp_af884b88b5b62a2c0e835465902403033}\index{Poziom5.cpp@{Poziom5.cpp}!isIntersecting5@{isIntersecting5}}
+\index{isIntersecting5@{isIntersecting5}!Poziom5.cpp@{Poziom5.cpp}}
+\doxysubsubsection{\texorpdfstring{isIntersecting5()}{isIntersecting5()}}
+{\footnotesize\ttfamily \label{_poziom5_8cpp_af884b88b5b62a2c0e835465902403033} 
+template$<$class T1, class T2$>$ \\
+bool is\+Intersecting5 (\begin{DoxyParamCaption}\item[{T1 \&}]{A}{, }\item[{T2 \&}]{B}{}\end{DoxyParamCaption})}
+
+
+
+Szablon klasy. 
+
+Funkcja z 2 argumentami szablonowymi, uniwersalna funckja, pozwoli nam sprawdzaæ kolizje miedzy roznymi obiektami Zwraca dana krawedz obiektu w pixelach 
